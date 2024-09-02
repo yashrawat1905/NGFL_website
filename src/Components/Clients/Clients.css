@@ -1,0 +1,73 @@
+/* Container for the logos with fading effect on both sides */
+.logo-slider {
+    overflow: hidden;
+    width: calc(100% - 160px); /* 80px space on each side */
+    background-color: black; /* Optional: Set a background color */
+    padding: 10px 0;
+    margin: 0 auto; /* Center the slider */
+    position: relative;
+  }
+  
+  /* Adding fading effect using pseudo-elements */
+  .logo-slider::before,
+  .logo-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .logo-slider::before {
+    left: 0;
+    background: linear-gradient(to right, #f9f9f9, transparent);
+  }
+  
+  .logo-slider::after {
+    right: 0;
+    background: linear-gradient(to left, #f9f9f9, transparent);
+  }
+  
+  /* Track that holds all the logos */
+  .logo-track {
+    display: flex;
+    animation: scroll 80s linear infinite;
+    /* Initial animation state */
+    animation-play-state: running;
+  }
+  
+  /* Each logo item with fade-in/out effect */
+  .logo-item {
+    flex: 0 0 auto;
+    padding: 0 15px; /* Optional: Adjust spacing between logos */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in/out effect */
+  }
+  
+  /* Show logos as they enter the slider view */
+  .logo-slider .logo-item {
+    opacity: 1; /* Make visible */
+  }
+  
+  /* Responsive sizing for logos */
+  .logo-item img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+  }
+  
+  /* Animation for scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Pausing the animation on hover */
+  .logo-track:hover {
+    animation-play-state: paused;
+  }
+  
