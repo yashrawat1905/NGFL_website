@@ -29,6 +29,7 @@
   align-items: center; /* Center items vertically */
   position: relative; /* Positioning context for the dropdown */
   margin: 0 20px;
+  padding-bottom: 10px; /* Increase the hovering area */
 }
 
 .navbar-link,
@@ -53,15 +54,18 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 66px; /* Start from where the navbar ends */
+  top: 65px; /* Position it just below the navbar item */
   left: 0;
   background-color: white; /* Same background as navbar */
   min-width: 160px; /* Adjust width to match or exceed parent */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 0;
-  margin: 0;
+  margin-top: -10px; /* Offset the margin added in navbar-item */
   border-radius: 4px; /* Optional: Add rounded corners */
+  opacity: 0; /* Start as invisible */
+  pointer-events: none; /* Prevents interaction when not visible */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
 }
 
 .dropdown-content a {
@@ -75,12 +79,16 @@
   background-color: #f0f0f0; /* Hover color */
 }
 
-.navbar-item:hover .dropdown-content {
+/* Ensure dropdown remains visible when hovering over it */
+.navbar-item:hover .dropdown-content,
+.dropdown-content:hover {
   display: block;
+  opacity: 1; /* Make visible */
+  pointer-events: auto; /* Allow interaction */
 }
 
 .btn {
-  background: #D71F26;
+  background: linear-gradient(to right, #e03b3b, #8f0404);
   color: #FFF;
   padding: 14px 25px;
   font-size: 16px;
@@ -95,10 +103,10 @@
 }
 
 .btn:hover {
-  background: #C61C1A; /* Slightly darker shade for hover effect */
+  /* background: #C61C1A; /* Slightly darker shade for hover effect */
   box-shadow: 0 0 35px #C61C1A; /* Matching box-shadow for hover effect */
+  background: linear-gradient(to left, #e03b3b, #8f0404);
 }
-
 
 .arrow-icon {
   width: 16px; /* Adjust size as needed */
