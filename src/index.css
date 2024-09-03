@@ -19,13 +19,23 @@ a {
     padding-right: 10%;
 }
 
-.btn{
+.btn {
     background: linear-gradient(to right, #e03b3b, #8f0404);
     color: #FFF;
     padding: 14px 25px;
     font-size: 16px;
-    border-radius: 10px;
     cursor: pointer;
+    border-radius: 10px;
     border: 0;
     outline: 0;
-}
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    /* background: #C61C1A; /* Slightly darker shade for hover effect */
+    box-shadow: 0 0 35px #C61C1A; /* Matching box-shadow for hover effect */
+    background: linear-gradient(to left, #e03b3b, #8f0404);
+  }
