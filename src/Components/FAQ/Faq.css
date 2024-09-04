@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.faq-heading {
+    text-align: center;
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    color: #070463;
+  }
+  
+
+.faq-container {
+  width: 100%;
+  max-width: 1228px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.faq-navbar {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.faq-navbar-item {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  position: relative;
+  background-clip: text;
+  border-radius: 5px
+}
+
+.faq-navbar-item.active {
+  background: linear-gradient(to right, #8e79f7, #070463);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.faq-navbar-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust this value to position the underline correctly */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #8e79f7, #070463);
+}
+
+.faq-content {
+  margin-top: 20px;
+}
+
+.faq-question-card {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 15px;
+  background-color: rgb(230, 230, 245);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.faq-accordion-button {
+  font-size: 28px;
+  color: red;
+}
+
+.faq-answer {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-answer.expanded {
+  max-height: 200px; /* Adjust this value based on the expected content height */
+  padding: 15px;
+}

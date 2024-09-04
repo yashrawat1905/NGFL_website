@@ -7,9 +7,9 @@ const Hero = () => {
     <div className='hero container'>
         <div className='hero-text'>
             <p>
-              <span className='highlight'>GET</span><br />
-              <span className='highlight'>EXPERIENCED</span><br />
-              <span className='highlight'>LOGISTICS SERVICES</span><br />
+              <span className='highlight'>Achieve your</span><br />
+              <span className='highlight'>goals with our</span><br />
+              <span className='highlight'>Logistics Expertise</span><br />
               <span className='sub'>Your 3PL Logistics Partner for supply chain management whether</span><br/>
               <span className='sub'>you are a START UP, an SME, or a big ENTERPRISE </span><br/>
             </p>

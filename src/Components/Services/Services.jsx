@@ -9,7 +9,7 @@ const Services = () => {
   const openForm = () => setIsFormOpen(true);
   const closeForm = () => setIsFormOpen(false);
   return (
-    <div className='services'>
+    <div className='services container'>
       <p className="services-heading">
         <strong>Logistics Solutions</strong> created for your business needs
       </p>
