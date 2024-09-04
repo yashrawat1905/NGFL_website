@@ -6,12 +6,17 @@ const Hero = () => {
   return (
     <div className='hero container'>
         <div className='hero-text'>
-            <h1>We Ensure better services for you</h1>
-            <p>Our mission is to provide the best services to our customers</p>
-            <button className='btn'>Our Pricing</button>
+            <p>
+              <span className='highlight'>GET</span><br />
+              <span className='highlight'>EXPERIENCED</span><br />
+              <span className='highlight'>LOGISTICS SERVICES</span><br />
+              <span className='sub'>Your 3PL Logistics Partner for supply chain management whether</span><br/>
+              <span className='sub'>you are a START UP, an SME, or a big ENTERPRISE </span><br/>
+            </p>
+            <button className='btn'>GET A QUOTE</button>
         </div>
     </div>
   )
 }
 
-export default Hero
+export default Hero;
