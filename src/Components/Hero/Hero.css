@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: white;
-    background-size: cover;
-    background-position: center;
+    background-color: white; /* White background for the hero section */
     color: black;
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 50px; /* Adjust this padding as needed */
+    position: relative; /* Position relative for the background image */
+    padding-left: 50px; /* Space between text and left edge */
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
 }
 
 .hero-text {
-    text-align: left;
-    max-width: 800px;
+    background-color: white; /* White background for the text area */
+    padding: 20px; /* Add padding around text */
+    border-radius: 8px; /* Optional: Rounded corners for the text box */
+    max-width: 800px; /* Maximum width for the text block */
+    position: relative; /* Ensure the text box is above the background image */
+    z-index: 1; /* Make sure text is above the image */
 }
 
 .hero-text h1 {
@@ -36,6 +40,20 @@
     font-size: 60px;
     display: block;
 }
-.sub{
+
+.sub {
     font-size: 38px;
+}
+
+/* Background image positioned on the right side */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust width to control how much space the image covers */
+    height: 100%;
+    background: url(../../assets/bg.webp) no-repeat center center;
+    background-size: cover;
+    z-index: 0; /* Place it behind the text */
 }

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  /*background-color: white; */
   padding-left: 3%;
   padding-right: 5%;
   position: fixed; /* Make the navbar sticky */

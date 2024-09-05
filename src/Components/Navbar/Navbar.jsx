@@ -43,7 +43,7 @@ const Navbar = () => {
             </button>
             <div className="dropdown-content">
               <a href="/automotive">AUTOMOTIVE</a>
-              <a href="/food-beverages">FOOD AND BEVERAGES</a>
+              <a href="/food">FOOD AND BEVERAGES</a>
               <a href="/healthcare">HEALTHCARE</a>
               <a href="/electronics">ELECTRONICS</a>
               <a href="/energy">ENERGY</a>
