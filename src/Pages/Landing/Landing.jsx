@@ -7,6 +7,7 @@ import Hero from '../../Components/Hero/Hero'
 import Faq from '../../Components/Faq/Faq'
 import Clients from '../../Components/Clients/Clients'
 import Industry from '../../Components/Industry/Industry'
+import Footer from '../../Components/Footer/Footer'
 
 const Landing = () => {
   return (
@@ -17,6 +18,7 @@ const Landing = () => {
       <Clients/>
       <Industry />
       <Faq/>
+      <Footer />
     </div>
   )
 }

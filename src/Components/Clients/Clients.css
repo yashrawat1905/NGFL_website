@@ -1,19 +1,22 @@
 .clients-section {
   text-align: center;
   padding: 40px 0;
+  background: white;
 }
 
 .clients-title {
-  font-size: 24px;
+  font-size: 35px;
   margin-bottom: 20px;
-  color: #333;
+  color: #1A3E70;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Container for the logos with fading effect on both sides */
 .logo-slider {
   overflow: hidden;
   width: calc(100% - 160px); /* Container width */
-  background: linear-gradient(to right, #8e79f7, #070463);
+  /*background: linear-gradient(to right, #8e79f7, #070463);*/
+  background: white;
   padding: 10px 0;
   margin: 0 auto;
   position: relative;
@@ -62,8 +65,8 @@
 }
 
 .logo-item img {
-  height: 120px; /* Set a fixed height for all logos */
-  width: 160px; /* Set a fixed width for all logos */
+  height: 180px; /* Set a fixed height for all logos */
+  width: 220px; /* Set a fixed width for all logos */
   object-fit: contain; /* Ensure logos fit within the container */
   transition: transform 0.3s ease-in-out; /* Optional: subtle animation on hover */
 }

@@ -34,7 +34,7 @@ const Clients = () => {
   return (
     <div className="clients-section">
       <h2 className="clients-title">
-        We have 35+ years of experience with 100+ brands who trust us in our know-how...
+        35+ years of experience with 100+ brands who trust us in our know-how...
       </h2>
       <div className="logo-slider container">
         <div className="logo-track">
