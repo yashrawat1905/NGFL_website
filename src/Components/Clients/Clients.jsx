@@ -32,7 +32,7 @@ import logo28 from '../../assets/client_logo/logo28.png'
 
 const Clients = () => {
   return (
-    <div className="clients-section">
+    <div className="clients-section container">
       <h2 className="clients-title">
         35+ years of experience with 100+ brands who trust us in our know-how...
       </h2>

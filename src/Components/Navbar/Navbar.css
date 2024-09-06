@@ -118,3 +118,8 @@
   height: auto;
   margin-left: 8px;
 }
+
+.dark-nav{
+  background: white;
+  transition: 0.5s;
+}

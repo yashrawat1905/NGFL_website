@@ -9,7 +9,7 @@ import healthcare from '../../assets/healthcare-industry.png';
 
 const Industry = () => {
   return (
-    <div className="industry-section">
+    <div className="industry-section container">
       <h2 className="industry-title">We have extensive experience across various industries</h2>
       <div className="industry-icons">
         <div className="industry-row">

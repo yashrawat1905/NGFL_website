@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png'; // Import your logo
 import downArrow from '../../assets/down-arrow.png'; // Import your down arrow icon
@@ -11,9 +11,16 @@ const Navbar = () => {
   const openForm = () => setIsFormOpen(true);
   const closeForm = () => setIsFormOpen(false);
 
+  const [sticky, setSticky] = useState(false);
+  useEffect (()=> {
+    window.addEventListener('scroll', ()=> {
+      window.scrollY > 80 ? setSticky (true) : setSticky (false);
+    })
+  },[]);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${sticky ? 'dark-nav' : ''}`}>
         <div className="navbar-logo">
           <img src={logo} alt="Logo" />
         </div>

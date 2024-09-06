@@ -45,7 +45,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container container">
       <h2 className="faq-heading">Got Questions? We’ve Got Answers!</h2>
       <div className="faq-navbar">
         {Object.keys(faqData).map((section) => (
