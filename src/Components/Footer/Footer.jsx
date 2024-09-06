@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Footer.css';
-import linkedin from '../../assets/linkedin.png';
-import instagram from '../../assets/instagram.png';
-import youtube from '../../assets/youtube.png';
-import footer_logo from '../../assets/footer.jpg'; // Replace with your actual logo path
+import linkedin from '../../assets/footer_logo/linkedin.png';
+import instagram from '../../assets/footer_logo/instagram.png';
+import youtube from '../../assets/footer_logo/youtube.png';
+import footer_logo from '../../assets/footer_logo/footer.jpg'; // Replace with your actual logo path
 
 const Footer = () => {
   return (

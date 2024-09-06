@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Industry.css';
-import automotive from '../../assets/automotive.png';
-import food from '../../assets/food.png';
-import energy from '../../assets/green-energy.png';
-import technology from '../../assets/technology.png';
-import healthcare from '../../assets/healthcare-industry.png';
+import automotive from '../../assets/industry_logo/automotive.png';
+import food from '../../assets/industry_logo/food.png';
+import energy from '../../assets/industry_logo/green-energy.png';
+import technology from '../../assets/industry_logo/technology.png';
+import healthcare from '../../assets/industry_logo/healthcare-industry.png';
 
 const Industry = () => {
   return (
