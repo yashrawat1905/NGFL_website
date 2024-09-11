@@ -15,6 +15,7 @@ import Energy from './Pages/Industries/Energy/Energy';
 import Food from './Pages/Industries/Food/Food';
 import Healthcare from './Pages/Industries/Healthcare/Healthcare';
 import Story from './Pages/About/Story/Story'
+import Career from './Pages/About/Career/Career';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/food" element={<Food />} />
         <Route path="/healthcare" element={<Healthcare />} />
         <Route path="/our-story" element={<Story />} />
+        <Route path="/careers" element={<Career />} />
       </Routes>
     </div>
   );
