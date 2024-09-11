@@ -1,0 +1,51 @@
+.service-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .section-title {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    color: #1A3E70;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+  }
+  
