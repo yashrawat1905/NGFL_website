@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import './Faq.css';
+import './FAquestions.css';
 
-const Faq = () => {
+const FAquestions = () => {
   // State to manage the currently active section and expanded questions
   const [activeSection, setActiveSection] = useState('General');
   const [expandedQuestion, setExpandedQuestion] = useState(null);
@@ -82,4 +82,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FAquestions;
