@@ -12,17 +12,19 @@ const Navbar = () => {
   const closeForm = () => setIsFormOpen(false);
 
   const [sticky, setSticky] = useState(false);
-  useEffect (()=> {
-    window.addEventListener('scroll', ()=> {
-      window.scrollY > 80 ? setSticky (true) : setSticky (false);
-    })
-  },[]);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 80 ? setSticky(true) : setSticky(false);
+    });
+  }, []);
 
   return (
     <>
       <nav className={`navbar ${sticky ? 'dark-nav' : ''}`}>
         <div className="navbar-logo">
+          <a href='/'>
           <img src={logo} alt="Logo" />
+          </a>
         </div>
         <ul className="navbar-menu">
           <li className="navbar-item dropdown">
@@ -32,6 +34,14 @@ const Navbar = () => {
             <div className="dropdown-content">
               <a href="/our-story">OUR STORY</a>
               <a href="/careers">CAREERS</a>
+              <div className="dropdown-submenu">
+                <a href="#">LOCATIONS</a>
+                <div className="dropdown-submenu-content">
+                  <a href="/locations/gurgaon"> WAREHOUSE In GURGAON</a>
+                  <a href="/locations/chennai">WAREHOUSE In CHENNAI</a>
+                  <a href="/locations/mumbai">WAREHOUSE In MUMBAI</a>
+                </div>
+              </div>
             </div>
           </li>
           <li className="navbar-item dropdown">

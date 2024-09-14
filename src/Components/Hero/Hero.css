@@ -23,17 +23,9 @@
     z-index: 1; /* Make sure text is above the image */
 }
 
-.hero-text h1 {
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 100px;
-    line-height: 1.2;
-}
-
 .hero-text p {
     max-width: 700px;
     margin: 10px 0 20px;
-    line-height: 1.1;
     margin-top: 20px;
 }
 
@@ -41,10 +33,17 @@
     font-weight: bold;
     font-size: 60px;
     display: block;
+    line-height : 0 ;
+    margin-bottom : 60px;
 }
 
 .sub {
-    font-size: 38px;
+    font-size: 32px;
+    line-height : 1.4; 
+}
+
+.hero-text button {
+    margin-top: 20px;
 }
 
 /* Background image positioned on the right side */
@@ -59,3 +58,5 @@
     background-size: cover;
     z-index: 0; /* Place it behind the text */
 }
+
+

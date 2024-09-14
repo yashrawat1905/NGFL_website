@@ -14,7 +14,7 @@
 
 .hero-content {
   flex: 1;
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: flex-start;
   padding-right: 20px;
