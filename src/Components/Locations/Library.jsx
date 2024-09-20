@@ -23,9 +23,9 @@ const Library = ({ location }) => {
 
   return (
     <div className="library-section">
-      <h2 className="library-heading">
-        Take a Virtual Tour and Discover the Excellence Within Our {location} Warehouse Facility
-      </h2>
+      <p className="library-heading">
+        <strong>Virtual Tour</strong> of the <strong>Excellence</strong> Within Our <strong>{location} Warehouse Facility</strong> 
+      </p>
       
       <div className="library-cards">
         {/* Video card */}

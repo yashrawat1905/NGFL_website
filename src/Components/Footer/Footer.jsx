@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-right">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/company/nagarkot/" target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="LinkedIn" className="social-icon" />
         </a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">

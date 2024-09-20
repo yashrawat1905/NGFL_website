@@ -8,6 +8,7 @@ import FAquestions from '../../Components/FAquestions/FAquestions'
 import Clients from '../../Components/Clients/Clients'
 import Industry from '../../Components/Industry/Industry'
 import Footer from '../../Components/Footer/Footer'
+import Section from '../../Components/Section/Section'
 
 const Landing = () => {
   return (
@@ -18,6 +19,7 @@ const Landing = () => {
       <Clients/>
       <Industry />
       <FAquestions/>
+      <Section />
       <Footer />
     </div>
   )

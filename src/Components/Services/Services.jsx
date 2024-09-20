@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div className='services container'>
       <p className="services-heading">
-        <strong>Logistics Solutions</strong> created for your business needs
+        <strong>Logistics Solutions</strong> created for your <strong>business needs</strong>
       </p>
       <div className='services-container'>
         <div className='service'>
@@ -23,7 +23,7 @@ const Services = () => {
             <p className="card-content">
               You have recently started and are seeking a logistics partner so you can stay focused on production, development, marketing, and growth.
             </p>
-            <a href="#" className="learn-more">Learn More</a>
+            <a href="/start-ups" className="learn-more">Learn More</a>
           </div>
         </div>
         <div className='service'>
@@ -35,7 +35,7 @@ const Services = () => {
             <p className="card-content">
               You are a stable business and want to further expand and reduce your costs.
             </p>
-            <a href="#" className="learn-more">Learn More</a>
+            <a href="/msme" className="learn-more">Learn More</a>
           </div>
         </div>
         <div className='service'>
@@ -47,7 +47,7 @@ const Services = () => {
             <p className="card-content">
               Well-established company, you want a full-service logistics company that has the know-how and can deliver on your standard SOPs.
             </p>
-            <a href="#" className="learn-more">Learn More</a>
+            <a href="/enterprise" className="learn-more">Learn More</a>
           </div>
         </div>
       </div>

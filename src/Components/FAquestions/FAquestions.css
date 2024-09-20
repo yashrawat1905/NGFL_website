@@ -2,13 +2,12 @@
 
 .faq-heading {
     text-align: center;
-    font-size: 62px;
-    font-weight: bold;
+    font-size: 44px;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 70px;
     margin-top: 100px;
-    color: #070463;
+    color: #1A3E70;
   }
-  
 
 .faq-container {
   width: 100%;
@@ -21,7 +20,8 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 2px solid #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
 }
 
 .faq-navbar-item {
@@ -32,10 +32,15 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: #000;
   position: relative;
   background-clip: text;
-  border-radius: 5px
+  border-radius: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-navbar-item:hover {
+  color: #8e79f7;
 }
 
 .faq-navbar-item.active {
@@ -48,7 +53,7 @@
 .faq-navbar-item.active::after {
   content: '';
   position: absolute;
-  bottom: -5px; /* Adjust this value to position the underline correctly */
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -60,10 +65,16 @@
 }
 
 .faq-question-card {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-question-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .faq-question {
@@ -78,7 +89,12 @@
 
 .faq-accordion-button {
   font-size: 28px;
-  color: red;
+  color: #070463;
+  transition: transform 0.3s ease;
+}
+
+.faq-question:hover .faq-accordion-button {
+  transform: rotate(90deg);
 }
 
 .faq-answer {
@@ -90,6 +106,7 @@
 }
 
 .faq-answer.expanded {
-  max-height: 200px; /* Adjust this value based on the expected content height */
+  max-height: 200px;
   padding: 15px;
 }
+

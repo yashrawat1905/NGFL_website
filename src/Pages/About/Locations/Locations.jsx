@@ -6,26 +6,70 @@ import Navbar from '../../../Components/Navbar/Navbar';
 import Benefits from '../../../Components/Locations/Benefits';
 import Library from '../../../Components/Locations/Library'; // Import the Library component
 import bgGurgaon from '../../../assets/locations/gurgaon.jpg';
+import bgGujarat from '../../../assets/locations/gujarat.jpg';
 import Custom from '../../../Components/Locations/Custom';
 import Clients from '../../../Components/Clients/Clients'
+import CaseStudy from '../../../Components/Locations/CaseStudy';
+import Warehousingsols from '../../../Components/Locations/Warehousingsols';
 
 // Example warehouse data
 const warehouseData = {
-  chennai: {
-    location: 'Chennai',
-    image: '/images/chennai-warehouse.jpg',
-    description: 'Warehousing services in Chennai.',
-  },
-  mumbai: {
-    location: 'Mumbai',
-    image: '/images/mumbai-warehouse.jpg',
-    description: 'Warehousing services in Mumbai.',
-  },
   gurgaon: {
     location: 'Gurgaon',
     image: bgGurgaon,
     description: 'Warehousing services in Gurgaon.',
   },
+  gujarat: {
+    location: 'Gujarat',
+    image: bgGujarat,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  chennai: {
+    location: 'Chennai',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  bangaluru: {
+    location: 'Bangaluru',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  hyderabad: {
+    location: 'Hyderabad',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  mumbai: {
+    location: 'Mumbai',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  kolkata: {
+    location: 'Kolkata',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  delhi: {
+    location: 'Delhi',
+    image: bgGurgaon,
+    description: 'Warehousing services in Gurgaon.',
+  },
+  pune: {
+    location: 'Pune',
+    image: '/images/mumbai-warehouse.jpg',
+    description: 'Warehousing services in Mumbai.',
+  },
+  lucknow: {
+    location: 'Lucknow',
+    image: '/images/mumbai-warehouse.jpg',
+    description: 'Warehousing services in Mumbai.',
+  },
+  bhiwandi: {
+    location: 'Bhiwandi',
+    image: '/images/mumbai-warehouse.jpg',
+    description: 'Warehousing services in Mumbai.',
+  },
+
 };
 
 const WarehousePage = () => {
@@ -50,8 +94,12 @@ const WarehousePage = () => {
       {warehouse.location.toLowerCase() === 'gurgaon' && (
         <Library location={warehouse.location} />
       )}
+      {warehouse.location.toLowerCase() === 'gurgaon' && (
+        <CaseStudy location={warehouse.location} />
+      )}
       <Custom />
       <Clients />
+      <Warehousingsols />
     </div>
   );
 };

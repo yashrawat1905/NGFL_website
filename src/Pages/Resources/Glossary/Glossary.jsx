@@ -52,9 +52,9 @@ const Glossary = () => {
 
       {/* Separate section for the title */}
       <div className="resource-title-container">
-        <h2 className="resource-title">
-          Your Go-To Resource for Understanding Supply Chain Glossaries and Key Logistics Terms
-        </h2>
+        <p className="resource-title">
+          Your <strong>Go-To Resource</strong> for Understanding <strong>Key Logistics Terms</strong>
+        </p>
       </div>
 
       {/* Glossary Cards Section */}

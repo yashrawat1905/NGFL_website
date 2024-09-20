@@ -43,7 +43,7 @@ const Enterprise = () => {
         backgroundImage={image}
         buttonText="GET STARTED"
       />
-      <Value values={values} />
+      <Value header="Our Core Values" values={values} />
       <Service cardData={pageData} />
     </div>
   )

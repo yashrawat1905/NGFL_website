@@ -11,7 +11,7 @@ import risk from '../../assets/locations/risk.png';
 const Benefits = ({ location }) => {
   return (
     <div className="benefits-section">
-      <h2>Benefits of using our 3PL Service in {location}</h2>
+      <p className='title'><strong>Benefits</strong> of using our <strong>3PL Service</strong> in <strong>{location}</strong></p>
       <div className="benefits-content">
         {/* Image on the left */}
         <div className="benefits-image">

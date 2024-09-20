@@ -1,0 +1,66 @@
+.warehousing-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h2 {
+    font-size: 44px;
+    color: #1A3E70;
+    margin-bottom: 20px;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  
+  .sol-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .sol-card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sol-card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .sol-card:hover .sol-card-image {
+    transform: scale(1.1);
+  }
+  
+  .sol-card-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sol-card-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .sol-card-content p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  

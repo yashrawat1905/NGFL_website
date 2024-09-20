@@ -1,0 +1,28 @@
+.electronics-section {
+    background-image: url('/path-to-your-background-image.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Adjust height for stripe-like appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 64px;
+  }
+  
+  .content-wrapper {
+    text-align: center;
+    color: white;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .section-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  

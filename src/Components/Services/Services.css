@@ -9,11 +9,12 @@
   justify-content: center;
   background-color: white;
 }
-
+ 
 .services-heading {
   font-family: 'Roboto', sans-serif;
   font-size: 44px;
   text-align: center;
+  color: #1A3E70;
   margin-bottom: 40px; /* Space between the heading and the cards */
 }
 

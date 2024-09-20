@@ -3,11 +3,9 @@ import React, { useState } from 'react';
 import './FAquestions.css';
 
 const FAquestions = () => {
-  // State to manage the currently active section and expanded questions
   const [activeSection, setActiveSection] = useState('General');
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
-  // Questions and Answers Data
   const faqData = {
     General: [
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
@@ -15,7 +13,6 @@ const FAquestions = () => {
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
-      // Other questions...
     ],
     '3PL': [
       { question: 'What is 3PL?', answer: '3PL stands for Third-Party Logistics...' },
@@ -23,7 +20,6 @@ const FAquestions = () => {
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
-      // Other questions...
     ],
     Warehousing: [
       { question: 'What warehousing services do you offer?', answer: 'We offer...' },
@@ -31,13 +27,12 @@ const FAquestions = () => {
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
       { question: 'What is your return policy?', answer: 'Our return policy is...' },
-      // Other questions...
     ],
   };
 
   const handleSectionClick = (section) => {
     setActiveSection(section);
-    setExpandedQuestion(null); // Collapse all questions when changing sections
+    setExpandedQuestion(null);
   };
 
   const handleQuestionClick = (index) => {
@@ -46,7 +41,7 @@ const FAquestions = () => {
 
   return (
     <div className="faq-container container">
-      <h2 className="faq-heading">Got Questions? We’ve Got Answers!</h2>
+      <p className="faq-heading">Got <strong>Questions?</strong> We’ve Got <strong>Answers!</strong></p>
       <div className="faq-navbar">
         {Object.keys(faqData).map((section) => (
           <button
@@ -68,11 +63,7 @@ const FAquestions = () => {
                 {expandedQuestion === index ? '-' : '+'}
               </span>
             </div>
-            <div
-              className={`faq-answer ${
-                expandedQuestion === index ? 'expanded' : ''
-              }`}
-            >
+            <div className={`faq-answer ${expandedQuestion === index ? 'expanded' : ''}`}>
               {item.answer}
             </div>
           </div>

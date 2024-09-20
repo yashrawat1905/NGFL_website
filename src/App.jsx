@@ -14,6 +14,9 @@ import Electronics from './Pages/Industries/Electronics/Electronics';
 import Energy from './Pages/Industries/Energy/Energy';
 import Food from './Pages/Industries/Food/Food';
 import Healthcare from './Pages/Industries/Healthcare/Healthcare';
+import Apparels from './Pages/Industries/Apparels/Apparels';
+import Retail from './Pages/Industries/Retail/Retail';
+import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods';
 import Story from './Pages/About/Story/Story';
 import Career from './Pages/About/Career/Career';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page
@@ -34,6 +37,9 @@ const App = () => {
         <Route path="/energy" element={<Energy />} />
         <Route path="/food" element={<Food />} />
         <Route path="/healthcare" element={<Healthcare />} />
+        <Route path="/apparel-fashion" element={<Apparels />} />
+        <Route path='/retail' element={<Retail />} />
+        <Route path="/white-goods" element={<Whitegoods />} />
         <Route path="/our-story" element={<Story />} />
         <Route path="/careers" element={<Career />} />
         {/* Dynamic warehouse location route */}

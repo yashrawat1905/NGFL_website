@@ -32,10 +32,10 @@ import logo28 from '../../assets/client_logo/logo28.png'
 
 const Clients = () => {
   return (
-    <div className="clients-section container">
-      <h2 className="clients-title">
-        35+ years of experience with 100+ brands who trust us in our know-how...
-      </h2>
+    <div className="clients-section container"> 
+      <p className="clients-title">
+        <strong>35+ years</strong> of experience with <strong>100+ brands</strong> who trust us...
+      </p>
       <div className="logo-slider container">
         <div className="logo-track">
           {/* First Row of Logos */}

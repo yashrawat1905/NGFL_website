@@ -34,14 +34,24 @@ const Navbar = () => {
             <div className="dropdown-content">
               <a href="/our-story">OUR STORY</a>
               <a href="/careers">CAREERS</a>
-              <div className="dropdown-submenu">
-                <a href="#">LOCATIONS</a>
-                <div className="dropdown-submenu-content">
-                  <a href="/locations/gurgaon"> WAREHOUSE In GURGAON</a>
-                  <a href="/locations/chennai">WAREHOUSE In CHENNAI</a>
-                  <a href="/locations/mumbai">WAREHOUSE In MUMBAI</a>
-                </div>
-              </div>
+            </div>
+          </li>
+          <li className='navbar-item dropdown'>
+            <button className="dropdown-button">
+              LOCATIONS <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+            </button>
+            <div className='dropdown-content'>
+              <a href="/locations/gurgaon"> WAREHOUSE In GURGAON</a>
+              <a href="/locations/gujarat"> WAREHOUSE In GUJARAT</a>
+              <a href="/locations/chennai"> WAREHOUSE In CHENNAI</a>
+              <a href="/locations/bangaluru"> WAREHOUSE In BANGALURU</a>
+              <a href="/locations/hyderabad"> WAREHOUSE In HYDERABAD</a>
+              <a href="/locations/mumbai"> WAREHOUSE In MUMBAI</a>
+              <a href="/locations/kolkata"> WAREHOUSE In KOLKATA</a>
+              <a href="/locations/delhi"> WAREHOUSE In DELHI</a>
+              <a href="/locations/pune"> WAREHOUSE In PUNE</a>
+              <a href="/locations/lucknow">WAREHOUSE In LUCKNOW</a>
+              <a href="/locations/bhiwandi">WAREHOUSE In BHIWANDI</a>
             </div>
           </li>
           <li className="navbar-item dropdown">

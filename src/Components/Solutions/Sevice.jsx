@@ -7,7 +7,7 @@ import './Service.css';
 const Service = ({ cardData }) => {
   return (
     <section className="service-section">
-      <h2 className="section-title">Our services for boosting your eCommerce business</h2>
+      <p className="section-title"><strong>Our services</strong> for boosting your <strong>eCommerce business</strong> </p>
       
       <div className="service-cards">
         {cardData.map((card, index) => (

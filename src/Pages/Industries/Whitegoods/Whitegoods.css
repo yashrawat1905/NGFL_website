@@ -1,4 +1,4 @@
-.food-section {
+.whitegoods-section {
     background-image: url('/path-to-your-background-image.jpg');
     background-color: black;
     background-size: cover;
@@ -19,10 +19,12 @@
   .section-title {
     font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
   
   .section-description {
     margin-top: 10px;
     font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
   }
   
