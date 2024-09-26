@@ -1,28 +1,121 @@
 .apparel-fashion-section {
-    background-image: url('/path-to-your-background-image.jpg');
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    height: 250px; /* Adjust height for stripe-like appearance */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 64px;
-  }
-  
-  .content-wrapper {
-    text-align: center;
-    color: white;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .section-description {
-    margin-top: 10px;
-    font-size: 1.2rem;
-  }
-  
+  background-image: url('/path-to-your-background-image.jpg');
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Adjust height for stripe-like appearance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 64px;
+}
+
+.content-wrapper {
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-description {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.overview-section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.overview-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.overview-text {
+  width: 50%;
+  padding: 20px;
+}
+
+.overview-image {
+  width: 50%;
+}
+
+.overview-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Zigzag alternating layout */
+.overview-content:nth-child(even) .overview-text {
+  order: 2;
+}
+
+.overview-content:nth-child(even) .overview-image {
+  order: 1;
+}
+
+.overview-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.overview-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ApparelFashionLogisticsOfferings.css */
+
+.apparel-fashion-logistics-section {
+  padding: 40px;
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+
+.apparel-fashion-logistics-section h2 {
+  font-size: 44px;
+  margin-bottom: 80px;
+  color: #1A3E70;
+}
+
+.apparel-fashion-logistics-section h3 {
+  font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    color: black;
+}
+
+.apparel-fashion-logistics-section p,
+.apparel-fashion-logistics-section ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+  color: black;
+}
+
+.apparel-fashion-logistics-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.apparel-fashion-logistics-section ul li {
+  margin-bottom: 5px;
+}

@@ -16,7 +16,7 @@ import Food from './Pages/Industries/Food/Food';
 import Healthcare from './Pages/Industries/Healthcare/Healthcare';
 import Apparels from './Pages/Industries/Apparels/Apparels';
 import Retail from './Pages/Industries/Retail/Retail';
-import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods';
+import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods'; 
 import Story from './Pages/About/Story/Story';
 import Career from './Pages/About/Career/Career';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page

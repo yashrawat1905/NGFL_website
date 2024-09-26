@@ -25,4 +25,95 @@
     margin-top: 10px;
     font-size: 1.2rem;
   }
+
+  .overview-section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+  
+  .overview-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .overview-text {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .overview-image {
+    width: 50%;
+  }
+  
+  .overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Zigzag alternating layout */
+  .overview-content:nth-child(even) .overview-text {
+    order: 2;
+  }
+  
+  .overview-content:nth-child(even) .overview-image {
+    order: 1;
+  }
+  
+  .overview-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .overview-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .healthcare-pharma-logistics-section {
+    padding: 40px;
+    background-color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+  }
+  
+  .healthcare-pharma-logistics-section h2 {
+    font-size: 44px;
+    margin-bottom: 80px;
+    color: #1A3E70;
+  }
+  
+  .healthcare-pharma-logistics-section h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .healthcare-pharma-logistics-section p,
+  .healthcare-pharma-logistics-section ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .healthcare-pharma-logistics-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .healthcare-pharma-logistics-section ul li {
+    margin-bottom: 5px;
+  }
+  
   
