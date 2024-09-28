@@ -20,6 +20,7 @@ import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods';
 import Story from './Pages/About/Story/Story';
 import Career from './Pages/About/Career/Career';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page
+import BlogDetail from './Components/BlogDetail/BlogDetail'; // Import your BlogDetail component
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/msme" element={<Msme />} />
         <Route path="/enterprise" element={<Enterprise />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Add the dynamic blog detail route */}
         <Route path="/case-studies" element={<Case />} />
         <Route path="/glossary" element={<Glossary />} />
         <Route path="/automotive" element={<Automotive />} />
@@ -38,7 +40,7 @@ const App = () => {
         <Route path="/food" element={<Food />} />
         <Route path="/healthcare" element={<Healthcare />} />
         <Route path="/apparel-fashion" element={<Apparels />} />
-        <Route path='/retail' element={<Retail />} />
+        <Route path="/retail" element={<Retail />} />
         <Route path="/white-goods" element={<Whitegoods />} />
         <Route path="/our-story" element={<Story />} />
         <Route path="/careers" element={<Career />} />

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Style for the glossary container */
+.blogs-container {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  /* Style for the background image */
+  .background-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.9;
+    border-radius: 10px;
+  }
+  
+  /* Style for the overlay on the image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  /* Style for the Glossary title */
+  .blogs-title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+  
+  /* Separate section for the resource title */
+  .blogs-title-container {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .blogs-title {
+    font-size: 44px;
+    font-family: "Roboto", 'san-serif';
+    color: #1A3E70;
+    line-height: 1.5;
+  }
+  
+  /* Style for the cards container */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 80px;
+    margin-top: 40px;
+  }
+  
+  /* Style for individual cards */
+  .card {
+    background-color: #d8dee4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1A3E70;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .title-body {
+    font-size: 1.1rem;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+  }
+  
+  /* Style for pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .page-number,
+  .prev-next {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-number:hover,
+  .prev-next:hover {
+    background-color: #1A3E70;
+    color: white;
+  }
+  
+  .page-number.active {
+    background-color: #1A3E70;
+    color: white;
+  }
+
+  /* Style for the Read More button */
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background-color: #1A3E70;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.read-more-button:hover {
+  background-color: #1f4b88;
+  transform: translateY(-3px);
+}
+
+.read-more-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+  

@@ -14,7 +14,7 @@
 .content-wrapper {
   text-align: center;
   color: white;
-}
+} 
 
 .section-title {
   font-size: 2.5rem;
@@ -28,103 +28,82 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Industry Overview Section */
 .industry-overview {
-  padding: 40px;
-  margin-top: 100px;
-  margin-left: 80px;
-  margin-right: 80px;
-  background-color: rgb(209, 209, 209);
-}
-
-.overview-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.overview-item.left-image .overview-text {
-  order: 2;
-}
-
-.overview-item.left-image img {
-  order: 1;
-}
-
-.overview-item.right-image img {
-  order: 2;
-}
-
-.overview-item.right-image .overview-text {
-  order: 1;
-}
-
-.overview-image {
-  width: 45%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.overview-text {
-  width: 50%;
   padding: 20px;
-  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 60px;
 }
 
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-}
-
-.overview-text ul {
-  font-size: 1.2rem;
-  list-style-type: none;
-  font-family: "Roboto", sans-serif;
-}
-
-.overview-text ul li {
-  margin-bottom: 10px;
-} 
-
-.logistics-offerings-section {
-  padding: 40px;
-  background-color: white;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 80px;
-}
-
-.logistics-offerings-section h2 {
+.industry-overview h2 {
   font-size: 44px;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
   color: #1A3E70;
 }
 
-.logistics-offerings-section h3 {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.industry-overview p {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   font-family: "Roboto", sans-serif;
-  margin-top: 20px;
+  font-size: 1.1rem;
   color: black;
 }
 
-.logistics-offerings-section p,
-.logistics-offerings-section ul {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
-  margin: 10px 0;
-  color: black;
+.gray-line {
+  border: none;
+  border-top: 1px solid gray;
+  margin-top: 40px;
 }
 
-.logistics-offerings-section ul {
-  list-style-type: disc;
-  margin-left: 20px;
+/* Key Challenges Section */
+.key-challenges {
+  display: flex;
+  padding: 40px 20px;
+  background-color: white;
+  align-items: center;
+}
+
+.key-challenges-content {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
+.key-challenges-heading {
+  font-size: 44px;
+  margin-bottom: 40px;
+  color: #1A3E70;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.key-challenges-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.key-challenges-list li {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+
+.key-challenges-image {
+  flex: 1;
+}
+
+.key-challenges-image img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 200px;
+  margin-top: 50px;
 }
