@@ -2,92 +2,105 @@
 import React from 'react'
 import './Electronics.css'
 import Navbar from '../../../Components/Navbar/Navbar'
-import Clients from '../../../Components/Clients/Clients';
-import electronics1 from '../../../assets/industry_logo/electronics1.jpg';
-import electronics2 from '../../../assets/industry_logo/electronics2.png';
 import Footer from '../../../Components/Footer/Footer';
+import truck from '../../../assets/industry_logo/truck1.png'
 
 const Electronics = () => {
   return ( 
     <div>
         <Navbar/>
         <div className="electronics-section">
-        <div className="content-wrapper">
-          <h1 className="section-title">Electronics Industry</h1>
-          <p className="section-description">
-            We specialize in providing cutting-edge logistics solutions for the automotive industry, ensuring efficiency and reliability.
+        <div className="electronics-content-wrapper">
+          <h1 className="electronics-section-title">Electronics Logistics Solutions</h1>
+          <p className="electronics-section-description">
+            Powering Your Supply Chain with Precision.
           </p>
         </div>
       </div>
-      {/* Overview of the Industry Section */}
-      <div className="industry-overview">
-        {/* First Block with Image Left, Text Right */}
-        <div className="overview-item left-image">
-          <img src= {electronics1} alt="Food logistics 1" className="overview-image" />
-          <div className="overview-text">
-            <h2>Overview of the Industry</h2>
+
+      {/* Industry Overview Section */}
+      <section className="electronics-industry-overview">
+        <h2>Industry Overview</h2>
+        <p>
+          In the fast-paced world of electronics logistics, precision, reliability, and speed are paramount. At Nagarkot Forwarders, we provide cutting-edge 3PL logistics solutions designed to address the unique challenges of transporting sensitive electronics, from consumer gadgets to industrial equipment. Our services ensure your products are handled with the utmost care, reaching their destinations safely and on time.
+        </p>
+        <p>
+          Leveraging our robust logistics network and state-of-the-art warehousing facilities, we optimize your supply chain, minimizing delays and maximizing efficiency. This strategic approach empowers your business to thrive in the competitive electronics marketplace.
+        </p>
+        <hr className="gray-line" />
+      </section>
+
+      {/* Offerings Section */}
+      <section className="electronics-offerings-section">
+        <h2 className="electronics-offerings-title">Our Electronics Logistics Offerings</h2>
+        <div className="electronics-offerings-grid">
+          <div className="electronics-offering-card">
+            <h3>Specialized Handling for Sensitive Electronics:</h3>
             <p>
-            In the fast-paced world of electronics logistics, precision, reliability, and speed are paramount. At Nagarkot Forwarders, we provide cutting-edge 3PL logistics solutions designed to address the unique challenges of transporting sensitive electronics, from consumer gadgets to industrial equipment. Our services ensure your products are handled with the utmost care, reaching their destinations safely and on time.
+            Our logistics services include specialized handling for fragile and high-value electronics, minimizing the risk of damage during transit. This includes critical components like:
+            o	Semiconductors
+            o	Circuit boards
+            o	Finished consumer electronics 
+            </p>
+          </div>
+
+          <div className="electronics-offering-card">
+            <h3>Just-in-Time (JIT) Delivery:</h3>
+            <p>
+              Our advanced logistics solutions include Just-in-Time (JIT) delivery capabilities, ensuring your electronics reach manufacturing lines or retail locations exactly when needed. This approach minimizes storage costs and enhances supply chain management.
+            </p>
+          </div>
+
+          <div className="electronics-offering-card">
+            <h3>Real-Time Tracking & Visibility:</h3>
+            <p>
+              Benefit from our cutting-edge logistics technology, providing real-time tracking and monitoring of your shipments. Full visibility across the supply chain ensures seamless management and total transparency, allowing you to track your product&#39;s journey at every step.
+            </p>
+          </div>
+
+          <div className="electronics-offering-card">
+            <h3>Customs Clearance & Compliance:</h3>
+            <p>
+              We navigate the complexities of international shipping with our comprehensive customs clearance services. Your electronics can move across borders efficiently while meeting all regulatory compliance requirements.
+            </p>
+          </div>
+
+          <div className="electronics-offering-card">
+            <h3>Value-Added Services:</h3>
+            <p>
+             Our suite of value-added services includes assembly, kitting, and quality control, tailored to meet the unique needs of the electronics industry. This helps ensure that your products arrive not only on time but also ready for immediate use or sale.
+            </p>
+          </div>
+
+          <div className="electronics-offering-card">
+            <h3>Security & Safety Measures:</h3>
+            <p>
+             We prioritize the safety and security of your high-value electronics. Our warehousing facilities include fire prevention, anti-theft systems, and 24/7 surveillance. These facilities are optimized to handle a wide range of electronics, including office equipment, mobile devices, computer components, home appliances, and more.
             </p>
           </div>
         </div>
+      </section>
 
-        {/* Second Block with Image Right, Text Left */}
-        <div className="overview-item right-image">
-          <div className="overview-text">
-          <p>
-          Leveraging our robust logistics network and state-of-the-art warehousing facilities, we optimize your supply chain, minimizing delays and maximizing efficiency. This strategic approach empowers your business to thrive in the competitive electronics marketplace.</p>
-          </div>
-          <img src= {electronics2} alt="Food logistics 2" className="overview-image" />
+      
+      {/* Why Nagarkot section */}
+      <div className="why-nagarkot-section">
+        <div className="image-container">
+          <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
+        </div>
+        <div className="content-container">
+          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <ul className="why-nagarkot-list">
+            <li>Unparalleled expertise in electronics handling.</li>
+            <li>Global reach with local expertise.</li>
+            <li>Tailored solutions for your specific business requirements.</li>
+            <li>Proven track record of reliability and efficiency.</li>
+          </ul>
+          <p className="why-nagarkot-summary">
+            Elevate your electronics logistics strategy with Nagarkot Forwarders. Contact us today to discover how our tailored 3PL solutions can transform your supply chain and propel your business forward in the ever-evolving world of electronics.
+          </p>
         </div>
       </div>
-      <div className="electronics-logistics-section">
-      <h2>Key Offerings for Electronics Logistics</h2>
 
-      <h3>1. Specialized Handling for Sensitive Electronics</h3>
-      <p>We offer expert handling for fragile and high-value electronics such as semiconductors, circuit boards, and consumer electronics, ensuring safe and damage-free delivery.</p>
-
-      <h3>2. FIFO (First In, First Out) Inventory Management</h3>
-      <p>Our inventory management employs FIFO principles to ensure that time-sensitive electronics are shipped in the correct order, reducing the risk of product obsolescence.</p>
-
-      <h3>3. Just-in-Time (JIT) Delivery</h3>
-      <p>We provide JIT delivery services, allowing manufacturers to receive electronics exactly when needed, reducing storage costs and improving efficiency.</p>
-
-      <h3>4. Real-Time Tracking & Visibility</h3>
-      <p>Our advanced technology allows full visibility into the logistics process, enabling real-time tracking of electronic goods from start to finish.</p>
-
-      <h3>5. Customs Clearance & Compliance</h3>
-      <p>We manage the complexities of international shipping with comprehensive customs clearance and compliance services, ensuring smooth transport across borders.</p>
-
-      <h3>6. Warehouse Kitting Services</h3>
-      <p>Our kitting services streamline the shipping process by assembling related electronic components into kits, speeding up delivery and reducing errors.</p>
-
-      <h3>7. Value-Added Services</h3>
-      <p>We offer assembly, testing, packaging, and other value-added services to enhance the quality and speed of delivery for electronics products.</p>
-
-      <h3>8. Security & Safety Measures</h3>
-      <p>With advanced security systems, anti-theft measures, and 24/7 surveillance, we ensure the safety and security of high-value electronic shipments.</p>
-
-      <h3>9. Scalable Solutions</h3>
-      <p>Our logistics solutions are scalable to meet the changing demands of your business, ensuring flexibility and efficiency as your needs grow.</p>
-
-      <h3>10. White Goods Logistics</h3>
-      <p>We specialize in logistics for white goods like refrigerators and washing machines, ensuring safe and timely delivery of these large items.</p>
-
-      <h3>Why Choose Nagarkot Forwarders for Electronics Logistics?</h3>
-      <p>Nagarkot Forwarders offers the perfect blend of expertise, technology, and security for managing your electronics logistics needs. Our solutions are designed to keep your supply chain efficient and reliable.</p>
-
-      <ul>
-        <li>Specialized handling for delicate and high-value electronics</li>
-        <li>Real-time tracking and inventory management systems</li>
-        <li>Compliance with international shipping regulations</li>
-        <li>Scalable logistics solutions to meet your business growth</li>
-        <li>Commitment to safety, security, and operational excellence</li>
-      </ul>
-
-      <p>Let Nagarkot Forwarders transform your electronics logistics with precision, security, and efficiency. Contact us today to learn more about our tailored 3PL solutions for the electronics industry.</p>
-    </div> 
-      <Clients />
       <Footer/>
     </div>
   )

@@ -13,7 +13,7 @@ import retail from '../../assets/industry_logo/store.png'
 const Custom = () => {
   return (
     <div className="custom-section">
-      <p className="custom-title"><strong>Custom-fit eCommerce logistics</strong> for your line of business</p>
+      <p className="custom-title">We have<strong> extensive experience</strong> across various industries</p>
       <div className="custom-icons">
         <div className="custom-row">
           <a href="/automotive" className="custom-item">

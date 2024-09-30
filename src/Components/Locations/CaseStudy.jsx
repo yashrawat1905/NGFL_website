@@ -52,9 +52,6 @@ const CaseStudy = () => {
                 <li>Efficiently handled high SKU volumes, enhancing the supply chain.</li>
               </ul>
             </div>
-            <button className="read-more-btn" onClick={handleReadMore}>
-              Read More
-            </button>
           </div>
         </div>
       </div>

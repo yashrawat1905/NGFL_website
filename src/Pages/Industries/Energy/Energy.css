@@ -11,18 +11,205 @@
     margin-top: 64px;
   }
   
-  .content-wrapper {
+  .energy-content-wrapper {
     text-align: center;
     color: white;
   }
   
-  .section-title {
+  .energy-section-title {
     font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
   
-  .section-description {
+  .energy-section-description {
     margin-top: 10px;
     font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
   }
   
+  /* Industry Overview Section */
+.energy-industry-overview {
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.energy-industry-overview h2 {
+  font-size: 44px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #1A3E70;
+}
+
+.energy-industry-overview p {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+ 
+.gray-line {
+  border: none;
+  border-top: 1px solid gray;
+  margin-top: 40px;
+}
+
+/* Key Challenges Section */
+.energy-key-challenges {
+  display: flex;
+  padding: 40px 20px;
+  background-color: white;
+  align-items: center;
+}
+
+.energy-key-challenges-content {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
+.energy-key-challenges-heading {
+  font-size: 44px;
+  margin-bottom: 40px;
+  color: #1A3E70;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.energy-key-challenges-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.energy-key-challenges-list li {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+
+.energy-key-challenges-image {
+  flex: 1;
+}
+
+.energy-key-challenges-image img {
+  width: 500px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 200px;
+  margin-top: 60px;
+}
+
+/* Offerings Section */
+.energy-offerings-section {
+  padding: 40px 20px;
+  background-color: rgb(220, 237, 244);
+}
+
+.energy-offerings-title {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1A3E70;
+  font-family: "Roboto", sans-serif;
+}
+
+.energy-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.energy-offering-card {
+  background-color: rgb(220, 237, 244);
+  padding: 20px;
+}
+
+.energy-offering-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.energy-offering-card p,
+.energy-offering-card ul {
+  font-size: 14px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.energy-offering-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.energy-offering-card ul li {
+  margin-bottom: 1px;
+}
+
+/* Why Nagarkot Section */
+.why-nagarkot-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1A3E70;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.why-nagarkot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  opacity: 0.5; /* Adds opacity to the image */
+  margin-left: 50px;
+}
+
+.content-container {
+  flex: 1.5;
+  padding-left: 200px;
+  margin-right: 50px;
+}
+
+.why-nagarkot-title {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.why-nagarkot-list {
+  list-style-type: disc;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: white;
+}
+
+.why-nagarkot-list li {
+  margin-bottom: 15px;    
+}
+
+.why-nagarkot-summary {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}

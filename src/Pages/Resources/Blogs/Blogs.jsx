@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import './Blogs.css'
 import { Link } from 'react-router-dom'; // Add Link from React Router
 import Navbar from '../../../Components/Navbar/Navbar'
-import Footer from '../../../Components/Footer/Footer'
-import blogbg from '../../../assets/resources/blog.jpg' 
+import Footer from '../../../Components/Footer/Footer' 
 
 const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,7 +63,7 @@ const Blogs = () => {
         <Navbar/>
         <div className="blogs-container">
         <div className="image-container">
-          <img src={blogbg} alt="Blogs Background" className="background-image" />
+          <img src='' alt="Blogs Background" className="background-image" />
           <div className="overlay">
             <h1 className="blogs-title"></h1>
           </div>

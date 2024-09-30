@@ -10,16 +10,16 @@ import Service from '../../../Components/Solutions/Sevice'
 const Enterprise = () => {
    // Value section ---
    const values = [
-    { title: 'Get started in a few weeks', description: 'Integrating logistics need not take months nor drain your resources. Simply use our Plug & Play set-up.' },
-    { title: 'Run your business digitally', description: 'Our web-based myFIEGE portal lets you access all reports and information in real time. This is how you always stay in the know.' },
-    { title: 'Invest in your brand', description: 'With FIEGE NOW, you start off without setting-up fees and maintain complete control of all costs. This leaves you with more of your budget for your brand. Which ultimately means more business for us all.' },
+    { title: 'Strong Logistics Infrastructure', description: 'We offer the extensive warehousing and logistics capabilities you need to manage complex supply chain operations effortlessly.' },
+    { title: 'Global Solutions', description: 'Our international logistics services ensure your supply chain operates smoothly across borders, so you can focus on expanding your global reach.' },
+    { title: 'Your Trusted Partner', description: 'We work closely with you, acting as an extension of your team, and providing tailored solutions that align with your long-term goals.' },
   ];
   
   // Service section cards
   const pageData = [
-    { title: "Logistics Solutions", description: "Expert handling of all your eCommerce shipments." },
-    { title: "Warehouse Management", description: "Efficient warehousing to store and manage your products." },
-    { title: "Customer Support", description: "Round-the-clock support for your customers." }
+    { title: "Comprehensive Supply Chain Management", description: "We manage your entire supply chain from start to finish, ensuring efficiency and transparency at every step covering all logistics and coordination activities in the order lifecycle, from PO management to final delivery." },
+    { title: "Personalized Account Management", description: "You will have a dedicated account manager who understands your unique requirements and keeps the lines of communication open for a smooth partnership." },
+    { title: "Award-winning in-house Customs brokerage, Freight forwarding services", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution – so you don’t have to waste time managing multiple vendors. " }
   ];
 
   return (
@@ -28,16 +28,11 @@ const Enterprise = () => {
         <Hero
         title={
           <>
-            From<br />
-            starting off<br />
-            to taking off
+            End-to-End Logistics for Global Enterprises
           </>
         }
         description={
-         <> You started your online business only recently. <br />
-            What you need now is a logistics provider so you may <br />
-            dedicate more time to your brand and your products.<br />
-            Start off with 1,000+ orders per month
+         <> Partnering for seamless supply chain success. Our robust logistics solutions are built to enhance your operations, ensuring you stay ahead in today&#39;s competitive landscape.
          </>
         }
         backgroundImage={image}

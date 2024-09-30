@@ -10,7 +10,7 @@ import bgGujarat from '../../../assets/locations/gujarat.jpg';
 import Custom from '../../../Components/Locations/Custom';
 import Clients from '../../../Components/Clients/Clients'
 import CaseStudy from '../../../Components/Locations/CaseStudy';
-import Warehousingsols from '../../../Components/Locations/Warehousingsols';
+import Footer from '../../../Components/Footer/Footer';
 
 // Example warehouse data
 const warehouseData = {
@@ -99,7 +99,7 @@ const WarehousePage = () => {
       )}
       <Custom />
       <Clients />
-      <Warehousingsols />
+      <Footer/>
     </div>
   );
 };

@@ -11,111 +11,156 @@
   margin-top: 64px;
 }
 
-.content-wrapper {
+.apparel-content-wrapper {
   text-align: center;
   color: white;
 }
 
-.section-title {
+.apparel-section-title {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
 
-.section-description {
+.apparel-section-description {
   margin-top: 10px;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
 }
 
-.overview-section {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 0;
-  padding: 0 20px;
-}
-
-.overview-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.overview-text {
-  width: 50%;
+/* Industry Overview Section */
+.apparel-industry-overview {
   padding: 20px;
-}
-
-.overview-image {
-  width: 50%;
-}
-
-.overview-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Zigzag alternating layout */
-.overview-content:nth-child(even) .overview-text {
-  order: 2;
-}
-
-.overview-content:nth-child(even) .overview-image {
-  order: 1;
-}
-
-.overview-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
   text-align: center;
+  margin-top: 60px;
 }
 
-.overview-paragraph {
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-/* ApparelFashionLogisticsOfferings.css */
-
-.apparel-fashion-logistics-section {
-  padding: 40px;
-  background-color: white;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 80px;
-}
-
-.apparel-fashion-logistics-section h2 {
+.apparel-industry-overview h2 {
   font-size: 44px;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
   color: #1A3E70;
 }
 
-.apparel-fashion-logistics-section h3 {
-  font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: "Roboto", sans-serif;
-    margin-top: 20px;
-    color: black;
-}
-
-.apparel-fashion-logistics-section p,
-.apparel-fashion-logistics-section ul {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.apparel-industry-overview p {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   font-family: "Roboto", sans-serif;
-  margin: 10px 0;
+  font-size: 1.1rem;
   color: black;
 }
 
-.apparel-fashion-logistics-section ul {
+.gray-line {
+  border: none;
+  border-top: 1px solid gray;
+  margin-top: 40px;
+}
+
+/* Offerings Section */
+.apparel-offerings-section {
+  padding: 40px 20px;
+  background-color: rgb(220, 237, 244);
+}
+
+.apparel-offerings-title {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1A3E70;
+  font-family: "Roboto", sans-serif;
+}
+
+.apparel-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.apparel-offering-card {
+  background-color: rgb(220, 237, 244);
+  padding: 20px;
+}
+
+.apparel-offering-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.apparel-offering-card p,
+.apparel-offering-card ul {
+  font-size: 14px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.apparel-offering-card ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-.apparel-fashion-logistics-section ul li {
-  margin-bottom: 5px;
+.apparel-offering-card ul li {
+  margin-bottom: 1px;
 }
+
+/* Why Nagarkot Section */
+.why-nagarkot-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #1A3E70;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.why-nagarkot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  opacity: 0.5; /* Adds opacity to the image */
+  margin-left: 50px;
+}
+
+.content-container {
+  flex: 1.5;
+  padding-left: 200px;
+  margin-right: 50px;
+}
+
+.why-nagarkot-title {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.why-nagarkot-list {
+  list-style-type: disc;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: white;
+}
+
+.why-nagarkot-list li {
+  margin-bottom: 15px;
+}
+
+.why-nagarkot-summary {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+

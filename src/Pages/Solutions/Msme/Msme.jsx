@@ -10,16 +10,17 @@ import Service from '../../../Components/Solutions/Sevice'
 const Msme = () => {
     // Value section ---
     const values = [
-      { title: 'Get started in a few weeks', description: 'Integrating logistics need not take months nor drain your resources. Simply use our Plug & Play set-up.' },
-      { title: 'Run your business digitally', description: 'Our web-based myFIEGE portal lets you access all reports and information in real time. This is how you always stay in the know.' },
-      { title: 'Invest in your brand', description: 'With FIEGE NOW, you start off without setting-up fees and maintain complete control of all costs. This leaves you with more of your budget for your brand. Which ultimately means more business for us all.' },
+      { title: 'Boost Your Efficiency', description: 'We streamline your logistics operations, helping you reduce lead times and deliver better service to your customers. We optimize your transportation routes to reduce shipping costs while ensuring timely deliveries to your customers.' },
+      { title: 'Flexible Solutions', description: 'Our adaptable logistics services can grow alongside your business, allowing you to respond quickly to changes in the market and customer needs.' },
+      { title: 'Valuable Insights', description: 'We provide you with insights into your supply chain, helping you make informed decisions that improve performance and profitability.' },
     ];
     
     // Service section cards
     const pageData = [
-      { title: "Logistics Solutions", description: "Expert handling of all your eCommerce shipments." },
-      { title: "Warehouse Management", description: "Efficient warehousing to store and manage your products." },
-      { title: "Customer Support", description: "Round-the-clock support for your customers." }
+      { title: "Multi-Channel Fulfillment", description: "Expert handling of all your eCommerce shipments." },
+      { title: "Expert Operational Consulting", description: "Efficient warehousing to store and manage your products." },
+      { title: "Lead generation", description: "Round-the-clock support for your customers." },
+      { title: "Award-winning legacy", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution – so you don’t have to waste time managing multiple vendors."}
     ];
 
   return (
@@ -28,16 +29,14 @@ const Msme = () => {
         <Hero
          title={
           <>
-            From<br />
-            starting off<br />
-            to taking off
+           Flexible<br/>
+           Solutions for<br/>
+           Expanding Businesses
           </>
         }
         description={
-         <> You started your online business only recently. <br />
-            What you need now is a logistics provider so you may <br />
-            dedicate more time to your brand and your products.<br />
-            Start off with 1,000+ orders per month
+         <> Streamlining your operations for greater success. With our flexible logistics services, we help you respond to market changes and deliver exceptional value to your customers.
+
          </>
         }
         backgroundImage={image}

@@ -10,16 +10,19 @@ import Service from '../../../Components/Solutions/Sevice'
 const Startups = () => {
   // Value section ---
   const values = [
-    { title: 'Get started in a few weeks', description: 'Integrating logistics need not take months nor drain your resources. Simply use our Plug & Play set-up.' },
-    { title: 'Run your business digitally', description: 'Our web-based myFIEGE portal lets you access all reports and information in real time. This is how you always stay in the know.' },
-    { title: 'Invest in your brand', description: 'With FIEGE NOW, you start off without setting-up fees and maintain complete control of all costs. This leaves you with more of your budget for your brand. Which ultimately means more business for us all.' },
+    { title: 'Flexible Pricing', description: 'We understand that every penny counts for you. That’s why we offer flexible and affordable pricing to help you manage your logistics and warehousing costs without requiring long term commitments.' },
+    { title: 'Scalable support', description: 'As you scale, our logistics solutions grow with you. We’re here to ensure you have the support you need to meet your customers’ demands, no matter how quickly your business expands.' },
+    { title: 'Guided Expertise', description: 'Manging logistics when you are starting out can be overwhelming. Our experienced consultants are here to guide you through the logistics maze, helping you streamline operations and focus on what you do best.' },
   ];
   
   // Service section card ---
   const pageData = [
-    { title: "Logistics Solutions", description: "Expert handling of all your eCommerce shipments." },
-    { title: "Warehouse Management", description: "Efficient warehousing to store and manage your products." },
-    { title: "Customer Support", description: "Round-the-clock support for your customers." }
+    { title: "Tailored Logistics Solutions", description: "We create customized warehousing and distribution services that fit your unique business needs and growth plans." },
+    { title: "Smart Inventory Management", description: "Our inventory management systems help you keep track of stock, reduce holding costs, and fulfill orders accurately, making your life easier." },
+    { title: "Strategic Supply Chain Consultation", description: "Get expert advice on optimizing your supply chain and managing risks, helping you build a strong foundation for your future success." },
+    { title: "Paperwork, Registrations and Compliances", description: "Figuring out compliances can be quite a task. We help you fulfil compliance requirements so you can focus on your core job – growing your business."},
+    { title: "Lead generation", description: "Take advantage of our proprietary database to find potential buyers for your finished goods, as well as alternate suppliers for your supplies. We are more than just a logistics company – we are your growth partner."},
+    { title: "Quick Setup, No Hassles", description: "We know speed is crucial for startups. That’s why we offer simple and fast onboarding so you can get your operations up and running in no time."}
   ];
 
   return (
@@ -28,16 +31,13 @@ const Startups = () => {
        <Hero 
          title={
            <>
-             From<br />
-             starting off<br />
+             From 
+             starting off<br/>
              to taking off
            </>
          }
          description={
-          <> You started your online business only recently. <br />
-             What you need now is a logistics provider so you may <br />
-             dedicate more time to your brand and your products.<br />
-             Start off with 1,000+ orders per month
+          <> Empowering your journey from idea to reality.<br/> Our tailored logistics solutions are designed to support your growth, helping you focus on what you do best.
           </>
          }
          backgroundImage={image}

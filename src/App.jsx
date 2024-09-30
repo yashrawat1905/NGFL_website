@@ -7,7 +7,6 @@ import Startups from './Pages/Solutions/Startups/Startups';
 import Msme from './Pages/Solutions/Msme/Msme';
 import Enterprise from './Pages/Solutions/Enterprise/Enterprise';
 import Blogs from './Pages/Resources/Blogs/Blogs';
-import Case from './Pages/Resources/Case/Case';
 import Glossary from './Pages/Resources/Glossary/Glossary';
 import Automotive from './Pages/Industries/Automotive/Automotive';
 import Electronics from './Pages/Industries/Electronics/Electronics';
@@ -32,7 +31,6 @@ const App = () => {
         <Route path="/enterprise" element={<Enterprise />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Add the dynamic blog detail route */}
-        <Route path="/case-studies" element={<Case />} />
         <Route path="/glossary" element={<Glossary />} />
         <Route path="/automotive" element={<Automotive />} />
         <Route path="/electronics" element={<Electronics />} />
