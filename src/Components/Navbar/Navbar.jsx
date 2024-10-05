@@ -41,17 +41,17 @@ const Navbar = () => {
               LOCATIONS <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className='dropdown-content'>
-              <a href="/locations/gurgaon"> WAREHOUSE In GURGAON</a>
-              <a href="/locations/gujarat"> WAREHOUSE In GUJARAT</a>
-              <a href="/locations/chennai"> WAREHOUSE In CHENNAI</a>
-              <a href="/locations/bangaluru"> WAREHOUSE In BANGALURU</a>
-              <a href="/locations/hyderabad"> WAREHOUSE In HYDERABAD</a>
-              <a href="/locations/mumbai"> WAREHOUSE In MUMBAI</a>
-              <a href="/locations/kolkata"> WAREHOUSE In KOLKATA</a>
-              <a href="/locations/delhi"> WAREHOUSE In DELHI</a>
-              <a href="/locations/pune"> WAREHOUSE In PUNE</a>
-              <a href="/locations/lucknow">WAREHOUSE In LUCKNOW</a>
-              <a href="/locations/bhiwandi">WAREHOUSE In BHIWANDI</a>
+              <a href="/locations/gurgaon"> GURGAON</a>
+              <a href="/locations/gujarat"> AHMEDABAD</a>
+              <a href="/locations/bhiwandi">BHIWANDI</a>
+              <a href="/locations/bengaluru"> BENGALURU</a>
+              <a href="/locations/chennai"> CHENNAI</a>
+              <a href="/locations/delhi"> DELHI</a>
+              <a href="/locations/hyderabad"> HYDERABAD</a>
+              <a href="/locations/kolkata"> KOLKATA</a>
+              <a href="/locations/lucknow">LUCKNOW</a>
+              <a href="/locations/mumbai"> MUMBAI</a>
+              <a href="/locations/pune"> PUNE</a>
             </div>
           </li>
           <li className="navbar-item dropdown">
@@ -59,7 +59,7 @@ const Navbar = () => {
               SOLUTIONS<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
-              <a href="/start-ups">START UPS</a>
+              <a href="/start-ups">STARTUPS</a>
               <a href="/msme">MSME</a>
               <a href="/enterprise">ENTERPRISE</a>
             </div>
@@ -91,7 +91,7 @@ const Navbar = () => {
           <li className="navbar-item">
             <button className="btn" onClick={openForm}>CONTACT US</button>
           </li>
-        </ul>
+        </ul> 
       </nav>
 
       {isFormOpen && <Form closeForm={closeForm} />}

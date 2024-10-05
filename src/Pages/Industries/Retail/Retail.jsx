@@ -3,7 +3,7 @@ import React from 'react';
 import './Retail.css';
 import Navbar from '../../../Components/Navbar/Navbar'; 
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png'
+import truck from '../../../assets/industry_logo/truck1.png';
 
 const Automotive = () => {
   
@@ -88,7 +88,7 @@ const Automotive = () => {
             </ul>
           </div>
           <div className="retail-offering-card">
-            <h3>Custom Packaging and Value-Added Services</h3>
+            <h3>Value-Added Services</h3>
             <p>
               Protect your products, enhance your brand, and meet specific retail needs with our tailored services:
             </p>
@@ -120,7 +120,7 @@ const Automotive = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li>Unmatched expertise in retail goods handling and security</li>
             <li>Innovative technology integration for real-time visibility</li>

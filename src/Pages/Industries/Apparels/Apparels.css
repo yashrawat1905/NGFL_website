@@ -1,5 +1,5 @@
 .apparel-fashion-section {
-  background-image: url('/path-to-your-background-image.jpg');
+  background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/apparel3.jpg');
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -94,10 +94,11 @@
 
 .apparel-offering-card p,
 .apparel-offering-card ul {
-  font-size: 14px;
+  font-size: 16px;
   color: black;
+  line-height: 24px;
   font-family: "Roboto", sans-serif;
-  text-align: justify;
+  text-align: left;
 }
 
 .apparel-offering-card ul {

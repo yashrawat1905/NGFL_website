@@ -84,7 +84,7 @@ const Food = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li><strong>Proven Expertise:</strong> Decades of experience working with top global manufacturers.</li>
             <li><strong>Scalability:</strong> From small-scale production runs to global distribution, our solutions scale to meet the needs of any project.</li>

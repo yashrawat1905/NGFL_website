@@ -1,5 +1,5 @@
 .food-section {
-    background-image: url('/path-to-your-background-image.jpg');
+    background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/f&b.jpg');
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,7 @@
 /* Offerings Section */
 .food-offerings-section {
   padding: 40px 20px;
-  background-color: rgb(220, 237, 244);
+  background-color: rgb(235, 248, 253);
 }
 
 .food-offerings-title {
@@ -81,7 +81,7 @@
 }
 
 .food-offering-card {
-  background-color: rgb(220, 237, 244);
+  background-color: rgb(235, 248, 253);
   padding: 20px;
 }
 
@@ -94,8 +94,9 @@
 
 .food-offering-card p,
 .food-offering-card ul {
-  font-size: 14px;
+  font-size: 16px;
   color: black;
+  line-height: 24px;
   font-family: "Roboto", sans-serif;
   text-align: justify;
 }

@@ -23,13 +23,12 @@
   .library-card {
     width: 45%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
   }
   
   .video-card video {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
   }

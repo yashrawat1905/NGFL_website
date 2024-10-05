@@ -10,8 +10,8 @@ const Hero = () => {
               <span className='highlight'>Achieve your</span><br />
               <span className='highlight'>goals with our</span><br />
               <span className='highlight'>Logistics Expertise</span><br />
-              <span className='sub'>Unlock seamless logistics with tailored 3PL solutions, ensuring optimized operations to drive your business growth, whether you are</span><br/>
-              <span className='sub'>a START UP, an SME, or a big ENTERPRISE </span><br/>
+              <span className='sub'>Unlock seamless logistics with tailored 3PL solutions, ensuring optimized operations to drive your business growth, whether you are a </span>
+              <span className='sub'>startup, <br/>an SME, or an established enterprise. </span><br/>
             </p>
             <button className='btn'>GET A QUOTE</button>
         </div>

@@ -1,5 +1,5 @@
 .automotive-section {
-  background-image: url('/path-to-your-background-image.jpg');
+  background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/auto2.jpeg');
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -104,14 +104,14 @@
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  margin-right: 200px;
+  margin-right: 100px;
   margin-top: 60px;
 }
 
 /* Offerings Section */
 .automotive-offerings-section {
   padding: 40px 20px;
-  background-color: rgb(220, 237, 244);
+  background-color: rgb(235, 248, 253);
 }
 
 .automotive-offerings-title {
@@ -131,7 +131,7 @@
 }
 
 .automotive-offering-card {
-  background-color: rgb(220, 237, 244);
+  background-color: rgb(235, 248, 253);
   padding: 20px;
 }
 
@@ -144,8 +144,9 @@
 
 .automotive-offering-card p,
 .automotive-offering-card ul {
-  font-size: 14px;
+  font-size: 16px;
   color: black;
+  line-height: 24px;
   font-family: "Roboto", sans-serif;
   text-align: justify;
 }

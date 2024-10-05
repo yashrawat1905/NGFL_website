@@ -11,7 +11,9 @@
   font-size: 44px;
   margin-bottom: 20px;
   color: #1A3E70;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Changa', sans-serif;
+  font-size: 44px;
+  font-weight: normal;
 }
  
 /* Container for the logos with fading effect on both sides */
@@ -50,7 +52,7 @@
 .logo-track {
   display: flex;
   flex-direction: column;
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
   animation-timing-function: linear; /* Smooth looping */
   animation-play-state: running;
 }

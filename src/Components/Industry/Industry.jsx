@@ -13,7 +13,7 @@ import retail from '../../assets/industry_logo/store.png'
 const Industry = () => {
   return (
     <div className="industry-section container">
-      <p className="industry-title">We have <strong>extensive experience</strong> across various <strong> industries</strong></p>
+      <p className="industry-title">We have extensive experience across various industries</p>
       <div className="industry-icons">
         <div className="industry-row">
           <a href="/automotive" className="industry-item">

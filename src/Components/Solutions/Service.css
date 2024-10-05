@@ -1,57 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-
 .service-section {
     padding: 40px 20px;
     background-color: white;
     margin-left: 60px;
     margin-right: 60px;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 44px;
     text-align: center;
     margin-bottom: 40px;
     font-family: "Roboto", sans-serif;
     color: #1A3E70;
-  }
-  
-  .service-cards {
+}
+
+.service-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-  }
-  
-  .service-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+}
+
+.service-card {
+    position: relative;
     width: 30%;
     min-width: 280px;
-    text-align: center;
+    height: 400px;
+    perspective: 1000px;
     margin-bottom: 40px;
-  }
+    cursor: pointer;
+}
 
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-heading {
-    font-size: 18px;
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.service-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.card-front {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-back {
+    background-color: #1A3E70;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.card-heading {
+    font-size: 24px;
     font-weight: 600;
-    margin-bottom: 30px;
     font-family: "Roboto", sans-serif;
-  }
-  
-  .card-description {
-    font-size: 14px;
-    color: black;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-description {
+    font-size: 24px;
+    color: white;
     font-family: "Roboto", sans-serif;
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.service-card:hover .card-heading {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card:hover .card-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    
+}

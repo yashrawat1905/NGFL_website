@@ -3,7 +3,7 @@ import React from 'react';
 import './Apparels.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png'
+import truck from '../../../assets/industry_logo/truck1.png';
 
 const Apparels = () => {
   return (
@@ -39,7 +39,7 @@ const Apparels = () => {
             <h3>Peak Season Scaling:</h3>
             <p>
               Operations designed to flex with your needs, easily handling holiday rushes and seasonal collection launches.
-            </p>
+            </p> 
           </div>
           
           <div className="apparel-offering-card">
@@ -90,7 +90,7 @@ const Apparels = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li><strong>Improved Productivity:</strong> Advanced solutions for streamlined operations and efficient inventory management.</li>
             <li><strong>Enhanced Accountability:</strong> Meticulous tracking and transparent processes ensure reliable operations.</li>

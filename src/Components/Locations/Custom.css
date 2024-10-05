@@ -39,8 +39,9 @@
   }
   
   .custom-item p {
-    font-size: 24px;
+    font-size: 28px;
     color:black;
+    font-weight: 600;
     margin: 0;
     font-family: "Roboto", sans-serif;
   }

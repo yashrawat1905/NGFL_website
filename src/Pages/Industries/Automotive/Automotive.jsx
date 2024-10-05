@@ -65,7 +65,7 @@ const Automotive = () => {
           <div className="automotive-offering-card">
             <h3>Value-Added Services</h3>
             <ul>
-              <li><strong>Quality Control (QC)</strong>: Ensuring that all parts and finished goods meet the strict standards of the automotive industry.</li>
+              <li><strong>Quality Control (QC)</strong>: Ensuring that all parts and finished goods meet the strict standards of automotive OEMs and component suppliers.</li>
               <li><strong>Barcoding and Labeling</strong>: Efficient tracking and traceability of parts throughout the supply chain.</li>
               <li><strong>Shrink Wrapping and Packaging</strong>: Tailored packaging solutions to protect sensitive automotive components during transport.</li>
               <li><strong>Sub-Assembly and Kitting</strong>: Providing assembly services to consolidate parts for easier production line integration.</li>
@@ -95,7 +95,7 @@ const Automotive = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li><strong>Proven Expertise:</strong> Decades of experience working with top global automotive manufacturers.</li>
             <li><strong>Scalability:</strong> From small-scale production runs to global distribution, our solutions scale to meet the needs of any project.</li>

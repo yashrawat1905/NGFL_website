@@ -3,9 +3,11 @@ import React from 'react'
 import './Msme.css'
 import Navbar from '../../../Components/Navbar/Navbar'
 import Hero from '../../../Components/Solutions/Hero'
-import image from '../../../assets/solutions/hero.png'
+import image from '../../../assets/solutions/msmebg.png'
 import Value from '../../../Components/Solutions/Value'
 import Service from '../../../Components/Solutions/Sevice'
+import Footer from '../../../Components/Footer/Footer'
+import msme from '../../../assets/solutions/msme.png'
 
 const Msme = () => {
     // Value section ---
@@ -17,10 +19,10 @@ const Msme = () => {
     
     // Service section cards
     const pageData = [
-      { title: "Multi-Channel Fulfillment", description: "Expert handling of all your eCommerce shipments." },
-      { title: "Expert Operational Consulting", description: "Efficient warehousing to store and manage your products." },
-      { title: "Lead generation", description: "Round-the-clock support for your customers." },
-      { title: "Award-winning legacy", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution – so you don’t have to waste time managing multiple vendors."}
+      { title: "Multi-Channel Fulfillment", description: "Expert handling of all your eCommerce shipments.", image: msme },
+      { title: "Expert Operational Consulting", description: "Efficient warehousing to store and manage your products.", image: msme },
+      { title: "Lead generation", description: "Round-the-clock support for your customers.", image: msme },
+      { title: "Award-winning legacy", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution – so you don’t have to waste time managing multiple vendors.", image: msme}
     ];
 
   return (
@@ -42,8 +44,9 @@ const Msme = () => {
         backgroundImage={image}
         buttonText="GET STARTED"
       />
-       <Value header="Our Core Values" values={values} />
+       <Value header="Our Value Proposition for MSMEs" values={values} />
        <Service cardData={pageData} />
+       <Footer/>
     </div>
   )
 }

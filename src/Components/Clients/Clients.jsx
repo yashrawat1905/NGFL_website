@@ -34,7 +34,7 @@ const Clients = () => {
   return (
     <div className="clients-section container"> 
       <p className="clients-title">
-        <strong>35+ years</strong> of experience with <strong>100+ brands</strong> who trust us...
+        <strong>35+</strong> years of experience with <strong>100+</strong> brands who trust us...
       </p>
       <div className="logo-slider container">
         <div className="logo-track">

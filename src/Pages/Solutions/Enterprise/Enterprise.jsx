@@ -1,11 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './Enterprise.css'
-import Navbar from '../../../Components/Navbar/Navbar'
-import Hero from '../../../Components/Solutions/Hero'
-import image from '../../../assets/solutions/bg.avif'
-import Value from '../../../Components/Solutions/Value'
-import Service from '../../../Components/Solutions/Sevice'
+import Navbar from '../../../Components/Navbar/Navbar';
+import Hero from '../../../Components/Solutions/Hero';
+import image from '../../../assets/solutions/bg.png';
+import Value from '../../../Components/Solutions/Value';
+import Service from '../../../Components/Solutions/Sevice';
+import ent2 from '../../../assets/solutions/enterprise2.jpeg';
+import Footer from '../../../Components/Footer/Footer';
 
 const Enterprise = () => {
    // Value section ---
@@ -17,9 +19,9 @@ const Enterprise = () => {
   
   // Service section cards
   const pageData = [
-    { title: "Comprehensive Supply Chain Management", description: "We manage your entire supply chain from start to finish, ensuring efficiency and transparency at every step covering all logistics and coordination activities in the order lifecycle, from PO management to final delivery." },
-    { title: "Personalized Account Management", description: "You will have a dedicated account manager who understands your unique requirements and keeps the lines of communication open for a smooth partnership." },
-    { title: "Award-winning in-house Customs brokerage, Freight forwarding services", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution – so you don’t have to waste time managing multiple vendors. " }
+    { title: "Comprehensive Supply Chain Management", description: "We manage your entire supply chain from start to finish, ensuring efficiency and transparency at every step covering all logistics and coordination activities in the order lifecycle, from PO management to final delivery.", image: ent2},
+    { title: "Personalized Account Management", description: "You will have a dedicated account manager who understands your unique requirements and keeps the lines of communication open for a smooth partnership.", image: ent2},
+    { title: "Award-winning inhouse Customs brokerage, Freight forwarding services", description: "You will be able to leverage our inhouse Customs Brokerage, Freight Forwarding and Trucking Brokerage teams to obtain an all under-one-roof solution.", image: ent2}
   ];
 
   return (
@@ -38,8 +40,9 @@ const Enterprise = () => {
         backgroundImage={image}
         buttonText="GET STARTED"
       />
-      <Value header="Our Core Values" values={values} />
+      <Value header="Our Value Proposition for Enterprises" values={values} />
       <Service cardData={pageData} />
+      <Footer/>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import Benefits from '../../../Components/Locations/Benefits';
 import Library from '../../../Components/Locations/Library'; // Import the Library component
 import bgGurgaon from '../../../assets/locations/gurgaon.jpg';
 import bgGujarat from '../../../assets/locations/gujarat.jpg';
+import other from '../../../assets/locations/other.webp';
 import Custom from '../../../Components/Locations/Custom';
 import Clients from '../../../Components/Clients/Clients'
 import CaseStudy from '../../../Components/Locations/CaseStudy';
@@ -26,47 +27,47 @@ const warehouseData = {
   },
   chennai: {
     location: 'Chennai',
-    image: bgGurgaon,
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
-  bangaluru: {
-    location: 'Bangaluru',
-    image: bgGurgaon,
+  bengaluru: {
+    location: 'Bengaluru',
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
   hyderabad: {
     location: 'Hyderabad',
-    image: bgGurgaon,
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
   mumbai: {
     location: 'Mumbai',
-    image: bgGurgaon,
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
   kolkata: {
     location: 'Kolkata',
-    image: bgGurgaon,
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
   delhi: {
     location: 'Delhi',
-    image: bgGurgaon,
+    image: other,
     description: 'Warehousing services in Gurgaon.',
   },
   pune: {
     location: 'Pune',
-    image: '/images/mumbai-warehouse.jpg',
+    image: other,
     description: 'Warehousing services in Mumbai.',
   },
   lucknow: {
     location: 'Lucknow',
-    image: '/images/mumbai-warehouse.jpg',
+    image: other,
     description: 'Warehousing services in Mumbai.',
   },
   bhiwandi: {
     location: 'Bhiwandi',
-    image: '/images/mumbai-warehouse.jpg',
+    image: other,
     description: 'Warehousing services in Mumbai.',
   },
 

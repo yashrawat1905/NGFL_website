@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 .hero {
     width: 100%;
     min-height: 100vh;
     background-color: white; /* White background for the hero section */
     color: black;
-    font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -21,6 +20,8 @@
     max-width: 800px; /* Maximum width for the text block */
     position: relative; /* Ensure the text box is above the background image */
     z-index: 1; /* Make sure text is above the image */
+    font-family: "Changa", sans-serif;
+    font-weight: 800;
 }
 
 .hero-text p {
@@ -30,7 +31,7 @@
 }
 
 .highlight {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 60px;
     display: block;
     line-height : 0 ;
@@ -39,8 +40,10 @@
 }
 
 .sub {
-    font-size: 32px;
+    font-size: 30px;
     line-height : 1.4; 
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
 }
 
 .hero-text button {

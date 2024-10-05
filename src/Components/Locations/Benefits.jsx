@@ -2,7 +2,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Benefits.css'; // Import your CSS file
-import benefit from '../../assets/locations/benefit.jpg'
+import benefit from '../../assets/locations/benefit.jpg';
+
 import cost from '../../assets/locations/cost.png'; // Use import for images
 import scale from '../../assets/locations/scale.png';
 import like from '../../assets/locations/like.png';

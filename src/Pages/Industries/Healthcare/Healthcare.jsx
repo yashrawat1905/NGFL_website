@@ -84,7 +84,7 @@ const Healthcare = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li>Specialized handling for temperature-sensitive and high-value products.</li>
             <li>Real-time visibility across the entire supply chain.</li>

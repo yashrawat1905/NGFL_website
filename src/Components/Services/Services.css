@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 .services {
   margin: 80px auto;
   width: 90%;
@@ -11,11 +13,12 @@
 }
  
 .services-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Changa', sans-serif;
   font-size: 44px;
+  font-weight: normal;
   text-align: center;
   color: #1A3E70;
-  margin-bottom: 40px; /* Space between the heading and the cards */
+  margin-bottom: 20px; /* Space between the heading and the cards */
 }
 
 .services-container {
@@ -26,10 +29,7 @@
 }
 
 .service {
-  border: 1px solid #ddd;
-  border-radius: 8px;
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   flex: 1 1 30%; /* Adjust flex properties for responsiveness */
   display: flex;
@@ -38,48 +38,47 @@
 }
 
 .service-navbar {
-  background: linear-gradient(to right, #8e79f7, #070463); /* Background color */
   padding: 20px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .navbar-title {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: 700; /* Make the title bold */
-  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 25; /* Make the title bold */
+  font-family: "Pacifico", cursive;
+  color: #D71F26;
 }
 
 .service-content {
-  padding: 20px;
+  padding-right: 70px;
+  padding-left: 70px;
   background-color: white;
+  line-height: 1.5;
+  margin-top: 10px;
   flex: 1; /* Take up remaining space */
-}
-
-.card-title {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
 }
 
 .card-content {
   font-size: 18px;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Changa', sans-serif;
 }
 
 .learn-more {
   display: block;
   margin-top: 20px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  font-family: 'Changa', sans-serif;
   text-decoration: underline;
-  color: #007bff; /* Link color */
+  color: #D71F26; /* Link color */
   cursor: pointer;
 }
 
-.learn-more:hover {
-  color: #0056b3; /* Darker blue on hover */
+
+.button{
+  margin-top: 20px;
 }

@@ -155,7 +155,7 @@ const Energy = () => {
           <img src={truck} alt="Nagarkot Forwarders" className="why-nagarkot-image" />
         </div>
         <div className="content-container">
-          <h2 className="why-nagarkot-title">Why Partner with Nagarkot Forwarders?</h2>
+          <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
             <li>Unmatched expertise in energy sector logistics</li>
             <li>Cutting-edge technology integration for enhanced efficiency</li>
