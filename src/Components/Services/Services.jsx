@@ -1,20 +1,27 @@
-// eslint-disable-next-line no-unused-vars
-import React, {useState} from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
 import './Services.css';
 import Form from '../Form/Form';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const Services = () => {
-    const [isFormOpen, setIsFormOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   const openForm = () => setIsFormOpen(true);
   const closeForm = () => setIsFormOpen(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className='services container'>
+    <div className='services container' data-aos="fade-up" data-aos-duration="1000">
       <p className="services-heading">
         Logistics Solutions created for <strong>your business needs</strong>
       </p>
       <div className='services-container'>
-        <div className='service'>
+        <div className='service' data-aos="zoom-in" data-aos-duration="500">
           <div className="service-navbar">
             <h3 className="navbar-title">Startups</h3>
           </div>
@@ -26,7 +33,7 @@ const Services = () => {
             <a href="/start-ups" className="learn-more">Learn how we can help you</a>
           </div>
         </div>
-        <div className='service'>
+        <div className='service' data-aos="zoom-in" data-aos-duration="500">
           <div className="service-navbar">
             <h3 className="navbar-title">MSME</h3>
           </div>
@@ -38,7 +45,7 @@ const Services = () => {
             <a href="/msme" className="learn-more">Learn how we can help you</a>
           </div>
         </div>
-        <div className='service'>
+        <div className='service' data-aos="zoom-in" data-aos-duration="500">
           <div className="service-navbar">
             <h3 className="navbar-title">Enterprises</h3>
           </div>

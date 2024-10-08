@@ -1,9 +1,16 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, {useEffect} from 'react';
 import './HeroSection.css';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS 
 
 const HeroSection = ({ location, image }) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -13,7 +20,7 @@ const HeroSection = ({ location, image }) => {
         </p>
         <button className="hero-button">GET STARTED</button>
       </div>
-      <div className="hero-image">
+      <div className="hero-image" data-aos="fade-left" data-aos-duration="15000">
         <img src={image} alt={`Warehouse in ${location}`} />
       </div>
     </section>

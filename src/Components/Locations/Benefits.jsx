@@ -1,26 +1,32 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Benefits.css'; // Import your CSS file
 import benefit from '../../assets/locations/benefit.jpg';
-
 import cost from '../../assets/locations/cost.png'; // Use import for images
 import scale from '../../assets/locations/scale.png';
 import like from '../../assets/locations/like.png';
 import risk from '../../assets/locations/risk.png';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS 
 
 const Benefits = ({ location }) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="benefits-section">
-      <p className='title'><strong>Benefits</strong> of using our <strong>3PL Service</strong> in <strong>{location}</strong></p>
+      <p className='title' data-aos="fade-up" data-aos-duration="1000"><strong>Benefits</strong> of using our <strong>3PL Service</strong> in <strong>{location}</strong></p>
       <div className="benefits-content">
         {/* Image on the left */}
-        <div className="benefits-image">
+        <div className="benefits-image" data-aos="fade-right" data-aos-duration="1000">
           <img src={benefit} alt="Warehouse Benefits" />
         </div>
 
         {/* Icons with benefits on the right */}
-        <div className="benefits-list">
+        <div className="benefits-list" data-aos="fade-left" data-aos-duration="1000">
           <div className="benefit-item">
             <img src={cost} alt="Cost Reduction" className="benefit-icon" />
             <div className="benefit-text">

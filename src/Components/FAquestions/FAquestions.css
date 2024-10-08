@@ -6,7 +6,9 @@
     font-family: 'Changa', sans-serif;
     margin-bottom: 70px;
     margin-top: 100px;
-    color: #1A3E70;
+    background: linear-gradient(to left, #e4855d, #040254);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
 .faq-container {
@@ -27,6 +29,7 @@
 .faq-navbar-item {
   padding: 10px 20px;
   background-color: transparent;
+  font-family: 'Changa', sans-serif;
   border: none;
   border-bottom: 3px solid transparent;
   cursor: pointer;

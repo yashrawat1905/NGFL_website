@@ -9,8 +9,10 @@
   .custom-title {
     font-size: 44px;
     margin-bottom: 100px;
-    color: #1A3E70;
-    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to left, #e4855d, #040254);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Changa", sans-serif;
   }
   
   .custom-icons {
@@ -43,6 +45,7 @@
     color:black;
     font-weight: 600;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
   }
   

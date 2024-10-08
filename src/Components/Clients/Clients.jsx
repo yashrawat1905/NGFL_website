@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, {useEffect} from 'react';
 import './Clients.css';
 import logo1 from '../../assets/client_logo/logo1.png'
 import logo2 from '../../assets/client_logo/logo2.png'
@@ -29,11 +29,18 @@ import logo25 from '../../assets/client_logo/logo25.png'
 import logo26 from '../../assets/client_logo/logo26.png'
 import logo27 from '../../assets/client_logo/logo27.png'
 import logo28 from '../../assets/client_logo/logo28.png'
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS 
 
 const Clients = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="clients-section container"> 
-      <p className="clients-title">
+      <p className="clients-title" data-aos="fade-up" data-aos-duration="1000">
         <strong>35+</strong> years of experience with <strong>100+</strong> brands who trust us...
       </p>
       <div className="logo-slider container">

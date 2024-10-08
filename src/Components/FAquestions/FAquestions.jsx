@@ -1,10 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
 import './FAquestions.css';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS 
 
 const FAquestions = () => {
   const [activeSection, setActiveSection] = useState('General');
   const [expandedQuestion, setExpandedQuestion] = useState(null);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
 
   const faqData = {
     'General': [
@@ -43,7 +50,7 @@ const FAquestions = () => {
 
   return (
     <div className="faq-container container">
-      <p className="faq-heading">Got <strong>Questions?</strong> We’ve Got <strong>Answers!</strong></p>
+      <p className="faq-heading" data-aos="fade-up" data-aos-duration="1000">Got <strong>Questions?</strong> We’ve Got <strong>Answers!</strong></p>
       <div className="faq-navbar">
         {Object.keys(faqData).map((section) => (
           <button
@@ -56,9 +63,9 @@ const FAquestions = () => {
         ))}
       </div>
 
-      <div className="faq-content">
+      <div className="faq-content" >
         {faqData[activeSection].map((item, index) => (
-          <div key={index} className="faq-question-card">
+          <div key={index} className="faq-question-card" data-aos="fade-right" data-aos-duration="200">
             <div className="faq-question" onClick={() => handleQuestionClick(index)}>
               {item.question}
               <span className="faq-accordion-button">

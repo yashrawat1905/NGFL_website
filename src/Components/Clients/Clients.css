@@ -10,7 +10,9 @@
 .clients-title {
   font-size: 44px;
   margin-bottom: 20px;
-  color: #1A3E70;
+  background: linear-gradient(to left, #e4855d, #040254);
+    -webkit-background-clip: text;
+    color: transparent;
   font-family: 'Changa', sans-serif;
   font-size: 44px;
   font-weight: normal;
