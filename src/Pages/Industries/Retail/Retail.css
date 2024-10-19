@@ -16,13 +16,15 @@
   }
   
   .retail-section-title {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: bold;
+    font-family: "Changa", sans-serif;
   }
   
   .retail-section-description {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-family: "Changa", sans-serif;
   }
 
   /* Industry Overview Section */
@@ -35,7 +37,8 @@
 .retail-industry-overview h2 {
   font-size: 44px;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Changa", sans-serif;
+  font-weight: normal;
   color: #1A3E70;
 }
 
@@ -44,7 +47,7 @@
   margin-bottom: 20px;
   margin-left: 200px;
   margin-right: 200px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.1rem;
   color: black;
 }
@@ -66,7 +69,8 @@
   text-align: center;
   margin-bottom: 40px;
   color: #1A3E70;
-  font-family: "Roboto", sans-serif;
+  font-family: "Changa", sans-serif;
+  font-weight: normal;
 }
 
 .retail-offerings-grid {
@@ -79,14 +83,16 @@
 
 .retail-offering-card {
   background-color: rgb(235, 248, 253);
-  padding: 20px;
+  padding: 10px;
 }
 
 .retail-offering-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-align: center;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Changa", sans-serif;
+  font-weight: normal;
 }
 
 .retail-offering-card p,
@@ -112,7 +118,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #1A3E70;
 }
 
@@ -136,8 +141,10 @@
 
 .why-nagarkot-title {
   font-size: 44px;
-  margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+  font-family: "Changa", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
   color: white;
 }
 

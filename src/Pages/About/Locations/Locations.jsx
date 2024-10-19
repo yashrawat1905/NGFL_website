@@ -7,7 +7,15 @@ import Benefits from '../../../Components/Locations/Benefits';
 import Library from '../../../Components/Locations/Library'; // Import the Library component
 import bgGurgaon from '../../../assets/locations/gurgaon.jpg';
 import bgGujarat from '../../../assets/locations/gujarat.jpg';
-import other from '../../../assets/locations/other.webp';
+import other from '../../../assets/locations/other.jpg';
+import other1 from '../../../assets/locations/other1.jpg';
+import other2 from '../../../assets/locations/other2.jpg';
+import other3 from '../../../assets/locations/other3.jpg';
+import other4 from '../../../assets/locations/other4.jpg';
+import other5 from '../../../assets/locations/other5.jpg';
+import other6 from '../../../assets/locations/other6.jpg';
+import other7 from '../../../assets/locations/other7.jpg';
+import other8 from '../../../assets/locations/other8.jpg';
 import Custom from '../../../Components/Locations/Custom';
 import Clients from '../../../Components/Clients/Clients'
 import CaseStudy from '../../../Components/Locations/CaseStudy';
@@ -32,42 +40,42 @@ const warehouseData = {
   },
   bengaluru: {
     location: 'Bengaluru',
-    image: other,
+    image: other1,
     description: 'Warehousing services in Gurgaon.',
   },
   hyderabad: {
     location: 'Hyderabad',
-    image: other,
+    image: other2,
     description: 'Warehousing services in Gurgaon.',
   },
   mumbai: {
     location: 'Mumbai',
-    image: other,
+    image: other3,
     description: 'Warehousing services in Gurgaon.',
   },
   kolkata: {
     location: 'Kolkata',
-    image: other,
+    image: other4,
     description: 'Warehousing services in Gurgaon.',
   },
   delhi: {
     location: 'Delhi',
-    image: other,
+    image: other5,
     description: 'Warehousing services in Gurgaon.',
   },
   pune: {
     location: 'Pune',
-    image: other,
+    image: other6,
     description: 'Warehousing services in Mumbai.',
   },
   lucknow: {
     location: 'Lucknow',
-    image: other,
+    image: other7,
     description: 'Warehousing services in Mumbai.',
   },
   bhiwandi: {
     location: 'Bhiwandi',
-    image: other,
+    image: other8,
     description: 'Warehousing services in Mumbai.',
   },
 

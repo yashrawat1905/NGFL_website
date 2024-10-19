@@ -13,10 +13,10 @@ const Service = ({ cardData }) => {
           <div key={index} className="service-card">
             <div className="card-inner">
               <div className="card-front" style={{ backgroundImage: `url(${card.image})` }}>
-                {/* Background image on the front */}
+               {/* Display the title on the front */}
+               <h3 className="card-heading-front">{card.title}</h3>
               </div>
               <div className="card-back">
-                <h3 className="card-heading">{card.title}</h3>
                 <p className="card-description">{card.description}</p>
               </div>
             </div>

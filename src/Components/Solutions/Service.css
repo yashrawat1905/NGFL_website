@@ -11,8 +11,9 @@
     font-size: 44px;
     text-align: center;
     margin-bottom: 40px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Changa", sans-serif;
     color: #1A3E70;
+    font-weight: normal;
 }
 
 .service-cards {
@@ -65,6 +66,22 @@
     background-position: center;
 }
 
+/* Title for the front of the card */
+.card-heading-front {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    top: 150px; /* Position at the bottom of the card */
+    width: 90%; /* Adjust width to suit design */
+    margin: 0 auto;
+    z-index: 1;
+}
+
 .card-back {
     background-color: #1A3E70;
     transform: rotateY(180deg);
@@ -74,31 +91,16 @@
     padding: 20px;
 }
 
-.card-heading {
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
+/* Description on the back of the card */
 .card-description {
     font-size: 24px;
     color: white;
     font-family: "Roboto", sans-serif;
     text-align: center;
+    margin-top: 50px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
-}
-
-.service-card:hover .card-heading {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .service-card:hover .card-description {
@@ -106,7 +108,12 @@
     transform: translateY(0);
 }
 
+.service-card:hover .card-heading-front {
+    opacity: 0;
+    transform: translateY(0);
+    
+}
+
 .service-card:hover {
     transform: translateY(-5px);
-    
 }

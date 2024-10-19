@@ -14,7 +14,7 @@ const Apparels = () => {
         <div className="apparel-content-wrapper">
           <h1 className="apparel-section-title">Apparel and Fashion Logistics Solutions</h1>
           <p className="apparel-section-description">
-            We specialize in providing cutting-edge logistics solutions for the apparel and fashion industry, ensuring flexibility, speed, and sustainability.
+            We provide advanced logistics solutions for the apparel and fashion industry, focused on flexibility, speed, and sustainability.
           </p>
         </div>
       </div>

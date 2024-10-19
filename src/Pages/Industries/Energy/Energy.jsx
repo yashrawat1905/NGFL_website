@@ -52,7 +52,6 @@ const Energy = () => {
           <ul className="energy-key-challenges-list">
             <li>•	Specialized handling to prevent damage during loading and unloading</li>
             <li>•	Protection against atmospheric conditions that could affect sensitive equipment</li>
-            <li>•	Proper handling techniques to avoid heat-related issues with solar panels</li>
           </ul>
         </div>
         <div className="energy-key-challenges-image">

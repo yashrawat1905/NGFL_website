@@ -7,7 +7,7 @@ const Value = ({ header, values }) => {
   return (
     <section className="value-section">
       <p className="value-header">
-        <strong>{header}</strong>
+        {header}
       </p>
       <div className="value-container">
         {values.map((value, index) => (
