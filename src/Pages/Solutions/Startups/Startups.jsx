@@ -3,11 +3,11 @@ import React from 'react'
 import './Startups.css'
 import Navbar from '../../../Components/Navbar/Navbar';
 import Hero from '../../../Components/Solutions/Hero';
-import image from '../../../assets/solutions/hero.png';
+import image from '../../../assets/solutions/hero.webp';
 import Value from '../../../Components/Solutions/Value';
 import Service from '../../../Components/Solutions/Sevice';
-import card1 from '../../../assets/solutions/startup.jpg';
-import card3 from '../../../assets/solutions/startup2.jpg';
+import card1 from '../../../assets/solutions/startup.webp';
+import card3 from '../../../assets/solutions/startup2.webp';
 import Footer from '../../../Components/Footer/Footer';
 
 const Startups = () => {

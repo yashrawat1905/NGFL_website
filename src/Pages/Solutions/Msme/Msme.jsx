@@ -3,11 +3,11 @@ import React from 'react'
 import './Msme.css'
 import Navbar from '../../../Components/Navbar/Navbar'
 import Hero from '../../../Components/Solutions/Hero'
-import image from '../../../assets/solutions/msmebg.png'
+import image from '../../../assets/solutions/msmebg.webp'
 import Value from '../../../Components/Solutions/Value'
 import Service from '../../../Components/Solutions/Sevice'
 import Footer from '../../../Components/Footer/Footer'
-import msme from '../../../assets/solutions/msme.png'
+import msme from '../../../assets/solutions/msme.webp'
 
 const Msme = () => {
     // Value section ---

@@ -4,18 +4,18 @@ import './Whitegoods.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
 import whitegoods1 from '../../../assets/industry_logo/whitegoods1.webp'
-import truck from '../../../assets/industry_logo/truck1.png'
+import truck from '../../../assets/industry_logo/truck1.webp'
 
 const Automotive = () => {
 
   return (
-    <div>
+    <div> 
       <Navbar />
       <div className="whitegoods-section"> 
         <div className="whitegoods-content-wrapper">
           <h1 className="whitegoods-section-title">White Goods Industry</h1>
           <p className="whitegoods-section-description">
-            We specialize in providing cutting-edge logistics solutions for the automotive industry, ensuring efficiency and reliability.
+            We provide competitive logistics solutions for 3PL and warehousing of white goods.
           </p>
         </div>
       </div>
@@ -42,10 +42,9 @@ const Automotive = () => {
         <div className="whitegoods-key-challenges-content">
           <h2 className="whitegoods-key-challenges-heading">Key Challenges</h2>
           <ul className="whitegoods-key-challenges-list">
-            <li><strong>• Push (Competition):</strong> ) Intense rivalry among local and foreign companies, leading to increased spending on marketing to capture more customers.</li>
-            <li><strong>• Pull (Raw Material Costs):</strong> Rising raw material prices significantly impact the cost of white goods, increasing production expenses.</li>
-            <li><strong>• Push-Pull (Technological Advancements):</strong> White goods manufacturers source parts globally, which requires efficient international freight management, customs clearance, and multimodal transportation solutions.</li>
-            <li><strong>• Quality Assurance:</strong> Constant innovation results in shorter product life cycles, requiring companies to consistently introduce new features to stay competitive.</li>
+            <li><strong>• Rising raw material costs:</strong> Rising raw material prices significantly impact the cost of white goods, increasing production expenses.</li>
+            <li><strong>• Complex SKU mix:</strong> White goods manufacturers source parts globally, which requires efficient international freight management, customs clearance, and multimodal transportation solutions.</li>
+            <li><strong>• Constantly evolving product mix:</strong> Constant innovation results in shorter product life cycles, requiring companies to consistently introduce new features to stay competitive and inculcate changing SOPs.</li>
           </ul>
         </div>
         <div className="whitegoods-key-challenges-image">
@@ -60,42 +59,42 @@ const Automotive = () => {
           <div className="whitegoods-offering-card">
             <h3>Specialized Warehousing</h3>
             <p>
-              Our facilities are equipped with custom racking and handling systems, ensuring large appliances are stored safely and efficiently.
+              Our facilities are equipped with racking and handling systems, ensuring large appliances are stored safely and efficiently.
             </p>
           </div>
           
           <div className="whitegoods-offering-card">
-            <h3>Advanced Inventory Management</h3>
+            <h3>Inventory Management</h3>
             <p>
-              We utilize cutting-edge technology to monitor stock levels in real-time, enabling accurate demand forecasting and inventory control.
+              We utilize appropriate WMS to monitor inventory in real-time, enabling accurate supply planning and inventory control.
             </p>
           </div>
 
           <div className="whitegoods-offering-card">
             <h3>Secure Handling & Transport</h3>
             <p>
-              Our trained staff and state-of-the-art equipment ensure the safe handling and transportation of heavy goods, minimizing the risk of damage.
+              Our trained staff and state-of-the-art equipment ensure safe handling and transportation of heavy goods, minimizing damage risk.
             </p>
           </div>
 
           <div className="whitegoods-offering-card">
-            <h3>Efficient Distribution Network</h3>
+            <h3>Timely Dispatches</h3>
             <p>
-              With a 98% on-time delivery rate, we ensure your products reach customers on schedule, keeping your supply chain running smoothly.
+              With appropriate planning, trained drivers and vehicle arrangement, we ensure your products reach customers as per schedule.
             </p>
           </div>
 
           <div className="whitegoods-offering-card">
-            <h3>Custom Packaging Solutions</h3>
+            <h3>Packaging Service</h3>
             <p>
-             Tailored packaging options ensure your appliances are protected during transit and storage.
+             Tailored packaging options from us ensure your appliances are protected during transit and storage.
             </p>
           </div>
 
           <div className="whitegoods-offering-card">
             <h3>Value-Added Services</h3>
             <p>
-             We offer additional services such as product inspections, assembly, and retail-ready packaging to enhance your supply chain operations.
+             We offer additional services such as product inspections, assembly, and retail-ready packaging to reduce multiple movement and costs.
             </p>
           </div>
         </div>
@@ -109,12 +108,12 @@ const Automotive = () => {
         <div className="content-container">
           <h2 className="why-nagarkot-title">Why Partner with <br/> Nagarkot Forwarders?</h2>
           <ul className="why-nagarkot-list">
-            <li><strong>Consumer Durables Warehousing</strong> Our advanced warehouses use cutting-edge technology for secure, efficient storage and traceability of high-value goods.</li>
-            <li><strong>Consumer Durables Export/Import</strong> We offer comprehensive international freight solutions, covering customs, air, and sea freight for raw materials to finished goods.</li>
-            <li><strong>In-Plant Logistics for White Goods</strong> We streamline in-plant logistics, reducing costs and improving efficiency in handling raw and finished goods within production facilities.</li>
+            <li><strong>Consumer Durables Warehousing:</strong> Our advanced warehouses use cutting-edge technology for secure, efficient storage and traceability of high-value goods.</li>
+            <li><strong>Consumer Durables Export/Import:</strong> We offer comprehensive international freight solutions, covering customs, air, and sea freight for raw materials to finished goods.</li>
+            <li><strong>In-Plant Logistics for White Goods:</strong> We streamline in-plant logistics, reducing costs and improving efficiency in handling raw and finished goods within production facilities.</li>
           </ul>
           <p className="why-nagarkot-summary">
-            Partnering with Nagarkot Forwarders means working with a 3PL provider that understands the intricacies of the automotive industry. Let us optimize your supply chain, so you can focus on what you do best—building world-class vehicles.
+            Partnering with Nagarkot Forwarders means working with a 3PL provider that understands the intricacies of the whitegoods industry. <br /><br />Let us optimize your supply chain, so you can focus on developing and selling high-value goods.
           </p>
         </div>
       </div>

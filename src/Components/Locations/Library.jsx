@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import './Library.css';
 import image1 from '../../assets/locations/image1.jpg';
 import image2 from '../../assets/locations/image2.jpg';
-import image3 from '../../assets/locations/image3.jpg';
-import image4 from '../../assets/locations/image4.jpg';
+import image3 from '../../assets/locations/image3.webp';
+import image4 from '../../assets/locations/image4.webp';
 import video from '../../assets/locations/video.mp4';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS 

@@ -3,10 +3,10 @@ import React from 'react'
 import './Enterprise.css'
 import Navbar from '../../../Components/Navbar/Navbar';
 import Hero from '../../../Components/Solutions/Hero';
-import image from '../../../assets/solutions/bg.png';
+import image from '../../../assets/solutions/bg.webp';
 import Value from '../../../Components/Solutions/Value';
 import Service from '../../../Components/Solutions/Sevice';
-import ent2 from '../../../assets/solutions/enterprise2.jpeg';
+import ent2 from '../../../assets/solutions/enterprise2.webp';
 import Footer from '../../../Components/Footer/Footer';
 
 const Enterprise = () => {

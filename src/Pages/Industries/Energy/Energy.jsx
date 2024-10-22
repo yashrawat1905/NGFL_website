@@ -3,12 +3,12 @@ import React from 'react'
 import './Energy.css'
 import Navbar from '../../../Components/Navbar/Navbar'
 import Footer from '../../../Components/Footer/Footer';
-import energy from '../../../assets/industry_logo/energy.jpg';
-import truck from '../../../assets/industry_logo/truck1.png'
+import energy from '../../../assets/industry_logo/energy.webp';
+import truck from '../../../assets/industry_logo/truck1.webp'
 
 const Energy = () => {
   return (
-    <div>
+    <div>  
         <Navbar/>
         <div className="energy-section">
         <div className="energy-content-wrapper">
@@ -62,20 +62,7 @@ const Energy = () => {
       {/* Offerings Section */}
       <section className="energy-offerings-section">
         <h2 className="energy-offerings-title">Our Energy Logistics Offerings</h2>
-        <div className="energy-offerings-grid">
-          <div className="energy-offering-card">
-            <h3>Specialized Handling of Heavy Equipment</h3>
-            <p>
-              Our logistics services are meticulously designed for the safe transportation of heavy and oversized equipment crucial to the energy sector:
-            </p>
-            <br/>
-            <ul>
-              <li>Turbines and generators</li>
-              <li>Drilling rigs and platforms</li>
-              <li>Solar panels and wind turbine components</li>
-            </ul>
-          </div>
-          
+        <div className="energy-offerings-grid">          
           <div className="energy-offering-card">
             <h3>Comprehensive Supply Chain Management</h3>
             <p>
@@ -101,20 +88,6 @@ const Energy = () => {
               <li>Meticulous documentation management</li>
               <li>Proactive compliance monitoring</li>
               <li>Support for environmental and safety standards</li>
-            </ul>
-          </div>
-
-          <div className="energy-offering-card">
-            <h3>Sustainability Initiatives</h3>
-            <p>
-              Align your logistics with your sustainability goals through our eco-friendly practices:
-            </p>
-            <br/>
-            <ul>
-              <li>Optimized transport routes to reduce carbon footprints</li>
-              <li>Recycling and waste management services for energy projects</li>
-              <li>Support for renewable energy logistics</li>
-              <li>Reporting on environmental impact and sustainability metrics</li>
             </ul>
           </div>
 

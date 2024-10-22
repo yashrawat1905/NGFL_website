@@ -3,18 +3,18 @@ import React from 'react';
 import './Retail.css';
 import Navbar from '../../../Components/Navbar/Navbar'; 
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png';
+import truck from '../../../assets/industry_logo/truck1.webp';
 
 const Automotive = () => {
   
   return ( 
-    <div>
+    <div> 
       <Navbar />
       <div className="retail-section">
         <div className="retail-content-wrapper">
           <h1 className="retail-section-title">Retail Goods Logistics</h1>
           <p className="retail-section-description">
-            Safeguarding and Optimizing Your Supply Chain
+            Driving Efficiency in Retail Logistics
           </p>
         </div>
       </div>
@@ -85,30 +85,6 @@ const Automotive = () => {
               <li>Monitor shipments in real-time</li>
               <li>Receive instant alerts for any anomalies or delays</li>
               <li>Make data-driven decisions to optimize your logistics</li>
-            </ul>
-          </div>
-          <div className="retail-offering-card">
-            <h3>Value-Added Services</h3>
-            <p>
-              Protect your products, enhance your brand, and meet specific retail needs with our tailored services:
-            </p>
-            <br/>
-            <ul>
-              <li>Develop tamper-evident packaging to deter pilferage</li>
-              <li>Design retail-ready packaging for efficient shelf stocking</li>
-              <li>Smart handling to maintain garment quality</li>
-            </ul>
-          </div>
-          <div className="retail-offering-card">
-            <h3>Returns Management</h3>
-            <p>
-              Streamline your returns process with our specialized services:
-            </p>
-            <br/>
-            <ul>
-              <li>Efficient handling of the returns management process</li>
-              <li>Processing end-of-season returns</li>
-              <li>Sorting and replenishment of returned items</li>
             </ul>
           </div>
         </div>

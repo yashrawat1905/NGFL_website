@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Form.css';
-import logo from '../../assets/form_logo.png'; // Import your logo from the assets folder
+import logo from '../../assets/form_logo.webp'; // Import your logo from the assets folder
 
 // eslint-disable-next-line react/prop-types
 const Form = ({ closeForm }) => {

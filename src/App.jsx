@@ -17,7 +17,6 @@ import Apparels from './Pages/Industries/Apparels/Apparels';
 import Retail from './Pages/Industries/Retail/Retail';
 import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods'; 
 import Story from './Pages/About/Story/Story';
-import Career from './Pages/About/Career/Career';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page
 import BlogDetail from './Components/BlogDetail/BlogDetail'; // Import your BlogDetail component
 
@@ -41,7 +40,6 @@ const App = () => {
         <Route path="/retail" element={<Retail />} />
         <Route path="/white-goods" element={<Whitegoods />} />
         <Route path="/our-story" element={<Story />} />
-        <Route path="/careers" element={<Career />} />
         {/* Dynamic warehouse location route */}
         <Route path="/locations/:location" element={<WarehousePage />} />
       </Routes>

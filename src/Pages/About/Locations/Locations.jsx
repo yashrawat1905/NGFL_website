@@ -6,16 +6,16 @@ import Navbar from '../../../Components/Navbar/Navbar';
 import Benefits from '../../../Components/Locations/Benefits';
 import Library from '../../../Components/Locations/Library'; // Import the Library component
 import bgGurgaon from '../../../assets/locations/gurgaon.jpg';
-import bgGujarat from '../../../assets/locations/gujarat.jpg';
-import other from '../../../assets/locations/other.jpg';
-import other1 from '../../../assets/locations/other1.jpg';
-import other2 from '../../../assets/locations/other2.jpg';
-import other3 from '../../../assets/locations/other3.jpg';
-import other4 from '../../../assets/locations/other4.jpg';
-import other5 from '../../../assets/locations/other5.jpg';
-import other6 from '../../../assets/locations/other6.jpg';
-import other7 from '../../../assets/locations/other7.jpg';
-import other8 from '../../../assets/locations/other8.jpg';
+import bgGujarat from '../../../assets/locations/gujarat.webp';
+import other from '../../../assets/locations/other.webp';
+import other1 from '../../../assets/locations/other1.webp';
+import other2 from '../../../assets/locations/other2.webp';
+import other3 from '../../../assets/locations/other3.webp';
+import other4 from '../../../assets/locations/other4.webp';
+import other5 from '../../../assets/locations/other5.webp';
+import other6 from '../../../assets/locations/other6.webp';
+import other7 from '../../../assets/locations/other7.webp';
+import other8 from '../../../assets/locations/other8.webp';
 import Custom from '../../../Components/Locations/Custom';
 import Clients from '../../../Components/Clients/Clients'
 import CaseStudy from '../../../Components/Locations/CaseStudy';

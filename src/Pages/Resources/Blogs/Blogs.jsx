@@ -4,7 +4,7 @@ import './Blogs.css'
 import { Link } from 'react-router-dom'; // Add Link from React Router
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer'; 
-import blog from '../../../assets/resources/blog3.jpg';
+import blog from '../../../assets/resources/blog.webp';
 
 const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);

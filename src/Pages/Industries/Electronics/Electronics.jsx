@@ -3,10 +3,10 @@ import React from 'react'
 import './Electronics.css'
 import Navbar from '../../../Components/Navbar/Navbar'
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png'
+import truck from '../../../assets/industry_logo/truck1.webp'
 
 const Electronics = () => {
-  return ( 
+  return (   
     <div>
         <Navbar/>
         <div className="electronics-section">
@@ -35,45 +35,42 @@ const Electronics = () => {
         <h2 className="electronics-offerings-title">Our Electronics Logistics Offerings</h2>
         <div className="electronics-offerings-grid">
           <div className="electronics-offering-card">
-            <h3>Specialized Handling for Sensitive Electronics:</h3>
+            <h3>Specialized Handling for Sensitive Electronics</h3>
             <p>
-            Our logistics services include specialized handling for fragile and high-value electronics, minimizing the risk of damage during transit. This includes critical components like:
-            o	Semiconductors
-            o	Circuit boards
-            o	Finished consumer electronics 
+            Our logistics services include specialized handling for fragile and high-value electronics, minimizing the risk of damage during transit. This includes critical components like: Semiconductors, Circuit boards and Finished consumer electronics 
             </p>
           </div>
 
           <div className="electronics-offering-card">
-            <h3>Just-in-Time (JIT) Delivery:</h3>
+            <h3>Just-in-Time (JIT) Delivery</h3>
             <p>
               Our advanced logistics solutions include Just-in-Time (JIT) delivery capabilities, ensuring your electronics reach manufacturing lines or retail locations exactly when needed. This approach minimizes storage costs and enhances supply chain management.
             </p>
           </div>
 
           <div className="electronics-offering-card">
-            <h3>Real-Time Tracking & Visibility:</h3>
+            <h3>Real-Time Tracking & Visibility</h3>
             <p>
               Benefit from our cutting-edge logistics technology, providing real-time tracking and monitoring of your shipments. Full visibility across the supply chain ensures seamless management and total transparency, allowing you to track your product&#39;s journey at every step.
             </p>
           </div>
 
           <div className="electronics-offering-card">
-            <h3>Customs Clearance & Compliance:</h3>
+            <h3>Customs Clearance & Compliance</h3>
             <p>
               We navigate the complexities of international shipping with our comprehensive customs clearance services. Your electronics can move across borders efficiently while meeting all regulatory compliance requirements.
             </p>
           </div>
 
           <div className="electronics-offering-card">
-            <h3>Value-Added Services:</h3>
+            <h3>Value-Added Services</h3>
             <p>
-             Our suite of value-added services includes assembly, kitting, and quality control, tailored to meet the unique needs of the electronics industry. This helps ensure that your products arrive not only on time but also ready for immediate use or sale.
+             Our suite of value-added services includes assembly, kitting and quality control, tailored to meet the unique needs of the electronics industry. This helps ensure that your products arrive not only on time but also ready for immediate use or sale.
             </p>
           </div>
 
           <div className="electronics-offering-card">
-            <h3>Security & Safety Measures:</h3>
+            <h3>Security & Safety Measures</h3>
             <p>
              We prioritize the safety and security of your high-value electronics. Our warehousing facilities include fire prevention, anti-theft systems, and 24/7 surveillance. These facilities are optimized to handle a wide range of electronics, including office equipment, mobile devices, computer components, home appliances, and more.
             </p>

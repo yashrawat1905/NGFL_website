@@ -3,12 +3,12 @@ import React from 'react'
 import './Healthcare.css'
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png';
+import truck from '../../../assets/industry_logo/truck1.webp';
 
 const Healthcare = () => {
   return (
     <div>
-        <Navbar/>
+        <Navbar/> 
         <div className="healthcare-section"> 
         <div className="healthcare-content-wrapper">
           <h1 className="healthcare-section-title">Pharma and Healthcare Logistics Solutions</h1>

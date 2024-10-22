@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import './CaseStudy.css';
-import image from '../../assets/careers/image.png';
-import image1 from "../../assets/careers/image1.png";
-import image2 from "../../assets/careers/image2.png";
+import image from '../../assets/careers/image.webp';
+import image1 from "../../assets/careers/image1.webp";
+import image2 from "../../assets/careers/image2.webp";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Importing arrow icons from react-icons
 
 const images = [image, image1, image2]; // Array of images
@@ -23,7 +23,7 @@ const CaseStudy = () => {
 
   return (
     <div className="case-study-container">
-      <p className="case-study-heading"><strong>CASE STUDY</strong></p>
+      <p className="case-study-heading"><strong>Case Study</strong></p>
       <div className="image-carousel">
         <FaArrowLeft className="arrow prev-arrow" onClick={handlePrevImage} /> {/* Left arrow */}
         <img

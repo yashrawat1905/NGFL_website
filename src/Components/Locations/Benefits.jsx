@@ -2,11 +2,11 @@
 /* eslint-disable react/prop-types */
 import React, {useEffect} from 'react';
 import './Benefits.css'; // Import your CSS file
-import benefit from '../../assets/locations/benefit.jpg';
-import cost from '../../assets/locations/cost.png'; // Use import for images
-import scale from '../../assets/locations/scale.png';
-import like from '../../assets/locations/like.png';
-import risk from '../../assets/locations/risk.png';
+import benefit from '../../assets/locations/benefit.webp';
+import cost from '../../assets/locations/cost.webp'; // Use import for images
+import scale from '../../assets/locations/scale.webp';
+import like from '../../assets/locations/like.webp';
+import risk from '../../assets/locations/risk.webp';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS 
 

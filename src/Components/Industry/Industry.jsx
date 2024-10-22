@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect} from 'react';
 import './Industry.css';
-import automotive from '../../assets/industry_logo/automotive.png';
-import food from '../../assets/industry_logo/food.png';
-import energy from '../../assets/industry_logo/green-energy.png';
-import technology from '../../assets/industry_logo/technology.png';
-import healthcare from '../../assets/industry_logo/healthcare-industry.png';
-import fashion from '../../assets/industry_logo/fashion.png';
-import white from '../../assets/industry_logo/white.png';
-import retail from '../../assets/industry_logo/store.png';
+import automotive from '../../assets/industry_logo/automotive.webp';
+import food from '../../assets/industry_logo/food.webp';
+import energy from '../../assets/industry_logo/green-energy.webp';
+import technology from '../../assets/industry_logo/technology.webp';
+import healthcare from '../../assets/industry_logo/healthcare-industry.webp';
+import fashion from '../../assets/industry_logo/fashion.webp';
+import white from '../../assets/industry_logo/white.webp';
+import retail from '../../assets/industry_logo/store.webp';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS 
 

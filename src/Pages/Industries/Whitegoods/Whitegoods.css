@@ -1,5 +1,5 @@
 .whitegoods-section {
-  background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/whitegoods.jpg');
+  background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/whitegoods.webp');
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@
   margin-right: 200px;
   font-family: "Arial", sans-serif;
   line-height: 24px;
-  font-size: 1.1rem;
+  font-size: 16px;
   color: black;
 }
 
@@ -87,7 +87,7 @@
 .whitegoods-key-challenges-list {
   list-style: none;
   padding-left: 0;
-  font-size: 1.1rem;
+  font-size: 16px;
   color: black;
   font-family: "Arial", sans-serif;
   line-height: 24px;
@@ -203,9 +203,9 @@
 
 .why-nagarkot-list {
   list-style-type: disc;
-  font-family: "Arial", sans-serif;
+  font-family: "Changa", sans-serif;
   margin-left: 20px;
-  font-size: 1.1rem;
+  font-size: 17px;
   text-align: justify;
   line-height: 24px;
   color: white;
@@ -217,10 +217,10 @@
 
 .why-nagarkot-summary {
   margin-top: 20px;
-  font-size: 1.1rem;
+  font-size: 17px;
   color: white;
   line-height: 1.6;
-  font-family: "Arial", sans-serif;
+  font-family: "Changa", sans-serif;
 }
 
 

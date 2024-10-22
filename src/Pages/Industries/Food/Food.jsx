@@ -3,10 +3,10 @@ import React from 'react';
 import './Food.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
-import truck from '../../../assets/industry_logo/truck1.png'
+import truck from '../../../assets/industry_logo/truck1.webp'
 
 const Food = () => {
-  return (
+  return ( 
     <div> 
       <Navbar />
       <div className="food-section">

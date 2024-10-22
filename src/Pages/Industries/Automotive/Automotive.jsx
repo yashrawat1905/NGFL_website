@@ -3,11 +3,11 @@ import React from 'react';
 import './Automotive.css';
 import Navbar from '../../../Components/Navbar/Navbar';
 import Footer from '../../../Components/Footer/Footer';
-import automotive1 from '../../../assets/industry_logo/automotive2.jpg';
-import truck from '../../../assets/industry_logo/truck1.png'
+import automotive1 from '../../../assets/industry_logo/automotive2.webp';
+import truck from '../../../assets/industry_logo/truck1.webp'
 const Automotive = () => {
   return (
-    <div> 
+    <div>   
       <Navbar />
       <div className="automotive-section">
         <div className="automotive-content-wrapper">
