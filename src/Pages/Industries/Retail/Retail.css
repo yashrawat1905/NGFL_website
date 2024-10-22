@@ -48,6 +48,7 @@
   margin-left: 200px;
   margin-right: 200px;
   font-family: "Arial", sans-serif;
+  line-height: 24px;
   font-size: 1.1rem;
   color: black;
 }
@@ -100,7 +101,7 @@
   font-size: 16px;
   color: black;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: justify;
 }
 
@@ -150,10 +151,11 @@
 
 .why-nagarkot-list {
   list-style-type: disc;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
   margin-left: 20px;
   font-size: 1.1rem;
   text-align: justify;
+  line-height: 24px;
   color: white;
 }
 
@@ -166,7 +168,7 @@
   font-size: 1.1rem;
   color: white;
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 

@@ -16,7 +16,7 @@ const Navbar = () => {
     window.addEventListener('scroll', () => {
       window.scrollY > 80 ? setSticky(true) : setSticky(false);
     });
-  }, []);
+  }, []);  
 
   return (
     <>
@@ -69,14 +69,14 @@ const Navbar = () => {
               INDUSTRIES<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
+              <a href="/apparel-fashion">APPAREL FASHION</a>
               <a href="/automotive">AUTOMOTIVE</a>
-              <a href="/food">FOOD AND BEVERAGES</a>
-              <a href="/healthcare">HEALTHCARE</a>
               <a href="/electronics">ELECTRONICS</a>
               <a href="/energy">ENERGY</a>
-              <a href="/apparel-fashion">APPAREL FASHION</a>
-              <a href="/white-goods">WHITE GOODS</a>
+              <a href="/food">FOOD AND BEVERAGES</a>
+              <a href="/healthcare">HEALTHCARE</a>
               <a href="/retail">RETAIL</a>
+              <a href="/white-goods">WHITE GOODS</a>
             </div>
           </li>
           <li className="navbar-item dropdown">

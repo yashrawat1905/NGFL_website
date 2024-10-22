@@ -65,9 +65,6 @@ const Blogs = () => {
         <div className="blogs-container">
         <div className="image-container">
           <img src={blog} alt="Blogs Background" className="background-image" />
-          <div className="overlay">
-            <h1 className="blogs-title"></h1>
-          </div>
         </div>
       </div>
 

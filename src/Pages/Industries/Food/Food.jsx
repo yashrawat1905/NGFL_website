@@ -13,8 +13,7 @@ const Food = () => {
         <div className="food-content-wrapper">
           <h1 className="food-section-title">Food & Beverages Logistics Solutions</h1>
           <p className="food-section-description">
-            We specialize in providing tailored logistics solutions for the food and beverages industry, ensuring freshness, safety, and compliance with regulations.
-          </p>
+            We provide tailored logistics solutions for the food and beverages industry, ensuring freshness, safety, and regulatory compliance.          </p>
         </div>
       </div>
       
