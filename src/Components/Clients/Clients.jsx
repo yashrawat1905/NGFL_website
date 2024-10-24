@@ -80,7 +80,6 @@ const Clients = () => {
             <div className="logo-item"><img src={logo27} alt="Brand 27" /></div>
             <div className="logo-item"><img src={logo28} alt="Brand 28" /></div>
           </div>
-          
         </div>
       </div>
     </div>

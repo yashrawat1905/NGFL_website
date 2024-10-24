@@ -14,7 +14,7 @@
     -webkit-background-clip: text;
     color: transparent;
   font-family: 'Changa', sans-serif;
-  font-size: 44px;
+  font-size: 44px;  
   font-weight: normal;
 }
  
@@ -54,7 +54,7 @@
 .logo-track {
   display: flex;
   flex-direction: column;
-  animation: scroll 10s linear infinite;
+  animation: scroll 60s linear infinite;
   animation-timing-function: linear; /* Smooth looping */
   animation-play-state: running;
 }
@@ -84,7 +84,7 @@
     transform: translateX(0); /* Start at the initial position */
   }
   100% {
-    transform: translateX(-50%); /* Slide to half the width, so it loops */
+    transform: translateX(-230%); /* Slide through all logos */
   }
 }
 
