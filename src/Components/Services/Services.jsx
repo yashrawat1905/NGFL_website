@@ -13,9 +13,11 @@ const Services = () => {
 
   useEffect(() => {
     AOS.init();
-  }, []);
+  }, []); 
+
 
   return (
+  <>
     <div className='services container' data-aos="fade-up" data-aos-duration="1000">
       <p className="services-heading">
         Logistics Solutions created for <strong>your business needs</strong>
@@ -59,8 +61,9 @@ const Services = () => {
         </div>
       </div>
       <button className="btn button" onClick={openForm}>GET STARTED</button>
-      {isFormOpen && <Form closeForm={closeForm} />}
     </div>
+    {isFormOpen && <Form closeForm={closeForm} />}
+   </> 
   );
 }
 

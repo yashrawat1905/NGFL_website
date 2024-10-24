@@ -1,6 +1,5 @@
 .whitegoods-section {
   background: linear-gradient(rgba(58, 55, 86, 0.7), rgba(10, 1, 61, 0.7)), url('../../../assets/industry_logo/whitegoods.webp');
-    background-color: black;
     background-size: cover;
     background-position: center;
     height: 250px; /* Adjust height for stripe-like appearance */
@@ -15,7 +14,7 @@
     text-align: center;
     color: white;
   }
-   
+    
   .whitegoods-section-title {
     font-size: 3.0rem;
     font-weight: bold;
