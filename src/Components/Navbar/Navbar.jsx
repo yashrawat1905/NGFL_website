@@ -1,57 +1,61 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.webp'; // Import your logo
-import downArrow from '../../assets/down-arrow.webp'; // Import your down arrow icon
-import Form from '../Form/Form'; // Import the FormModal component
+import logo from '../../assets/logo.webp';
+import downArrow from '../../assets/down-arrow.webp';
+import Form from '../Form/Form';
 
 const Navbar = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // For toggling mobile menu
+  const [menuOpen, setMenuOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
 
   const openForm = () => setIsFormOpen(true);
   const closeForm = () => setIsFormOpen(false);
 
+  // Scroll listener to toggle sticky class
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 80 ? setSticky(true) : setSticky(false);
-    });
+    const handleScroll = () => setSticky(window.scrollY > 80);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle menu visibility
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <>
-      <nav className={`navbar ${sticky ? 'dark-nav' : ''} ${menuOpen ? 'open' : ''}`}>
-        <div className="navbar-logo">
-          <a href='/'>
-            <img src={logo} alt="Logo" />
-          </a>
+      <nav className={`navbar ${sticky ? 'dark-nav' : ''}`}>
+        <div className="navbar-content">
+          <div className="navbar-logo">
+            <a href="/">
+              <img src={logo} alt="Logo" />
+            </a>
+          </div>
+
+          {/* Hamburger Menu for Mobile */}
+          <div className="hamburger" onClick={toggleMenu}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
+        {/* Mobile Navbar Menu */}
         <ul className={`navbar-menu ${menuOpen ? 'show-menu' : ''}`}>
           <li className="navbar-item dropdown">
             <button className="dropdown-button">
-              ABOUT US<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+              ABOUT US <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
               <a href="/our-story">OUR STORY</a>
             </div>
           </li>
 
-          <li className='navbar-item dropdown'>
+          <li className="navbar-item dropdown">
             <button className="dropdown-button">
               LOCATIONS <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
-            <div className='dropdown-content'>
+            <div className="dropdown-content">
               <a href="/locations/gurgaon">GURGAON</a>
               <a href="/locations/gujarat">AHMEDABAD</a>
               <a href="/locations/bhiwandi">BHIWANDI</a>
@@ -68,7 +72,7 @@ const Navbar = () => {
 
           <li className="navbar-item dropdown">
             <button className="dropdown-button">
-              SOLUTIONS<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+              SOLUTIONS <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
               <a href="/start-ups">STARTUPS</a>
@@ -79,7 +83,7 @@ const Navbar = () => {
 
           <li className="navbar-item dropdown">
             <button className="dropdown-button">
-              INDUSTRIES<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+              INDUSTRIES <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
               <a href="/apparel-fashion">APPAREL FASHION</a>
@@ -95,10 +99,9 @@ const Navbar = () => {
 
           <li className="navbar-item dropdown">
             <button className="dropdown-button">
-              RESOURCES<img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+              RESOURCES <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
             </button>
             <div className="dropdown-content">
-              <a href="/glossary">GLOSSARY</a>
               <a href="/blogs">BLOGS</a>
             </div>
           </li>
@@ -109,6 +112,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
+      {/* Contact Form Modal */}
       {isFormOpen && <Form closeForm={closeForm} />}
     </>
   );

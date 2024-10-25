@@ -7,7 +7,6 @@ import Startups from './Pages/Solutions/Startups/Startups';
 import Msme from './Pages/Solutions/Msme/Msme';
 import Enterprise from './Pages/Solutions/Enterprise/Enterprise';
 import Blogs from './Pages/Resources/Blogs/Blogs';
-import Glossary from './Pages/Resources/Glossary/Glossary';
 import Automotive from './Pages/Industries/Automotive/Automotive';
 import Electronics from './Pages/Industries/Electronics/Electronics';
 import Energy from './Pages/Industries/Energy/Energy';
@@ -19,6 +18,7 @@ import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods';
 import Story from './Pages/About/Story/Story';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page
 import BlogDetail from './Components/BlogDetail/BlogDetail'; // Import your BlogDetail component
+import PrivacyPolicy from './Pages/About/Privacy-policy/pp';
 
 const App = () => {
   return (
@@ -30,7 +30,6 @@ const App = () => {
         <Route path="/enterprise" element={<Enterprise />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Add the dynamic blog detail route */}
-        <Route path="/glossary" element={<Glossary />} />
         <Route path="/automotive" element={<Automotive />} />
         <Route path="/electronics" element={<Electronics />} />
         <Route path="/energy" element={<Energy />} />
@@ -42,6 +41,7 @@ const App = () => {
         <Route path="/our-story" element={<Story />} />
         {/* Dynamic warehouse location route */}
         <Route path="/locations/:location" element={<WarehousePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );

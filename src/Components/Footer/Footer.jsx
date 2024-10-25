@@ -74,7 +74,6 @@ const Footer = () => {
       {/* Terms, Privacy, and Social Media */}
       <div className="footer-terms-social">
         <div className="footer-terms">
-          <a href="/terms-and-conditions">Terms and Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>
         </div>
         <div className="footer-social">

@@ -113,7 +113,7 @@ const Automotive = () => {
             <li><strong>In-Plant Logistics for White Goods:</strong> We streamline in-plant logistics, reducing costs and improving efficiency in handling raw and finished goods within production facilities.</li>
           </ul>
           <p className="why-nagarkot-summary">
-            Partnering with Nagarkot Forwarders means working with a 3PL provider that understands the intricacies of the whitegoods industry. <br /><br />Let us optimize your supply chain, so you can focus on developing and selling high-value goods.
+            Partnering with Nagarkot Forwarders means working with a 3PL provider that understands the intricacies of the white goods industry. <br /><br />Let us optimize your supply chain, so you can focus on developing and selling high-value goods.
           </p>
         </div>
       </div>

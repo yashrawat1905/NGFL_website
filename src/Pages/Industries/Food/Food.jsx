@@ -48,7 +48,7 @@ const Food = () => {
           </div>
 
           <div className="food-offering-card">
-            <h3>Advanced Inventory Management:</h3>
+            <h3>Inventory Management:</h3>
             <p>
               Leveraging systems like FIFO (First In, First Out), FEFO (First Expired, First Out), and batch or lot management for efficient inventory rotation and management, minimizing waste and maximizing freshness.
             </p>
