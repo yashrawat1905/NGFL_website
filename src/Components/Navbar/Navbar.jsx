@@ -95,7 +95,7 @@ const Navbar = () => {
               <a href="/retail">RETAIL</a>
               <a href="/white-goods">WHITE GOODS</a>
             </div>
-          </li>
+          </li> 
 
           <li className="navbar-item dropdown">
             <button className="dropdown-button">

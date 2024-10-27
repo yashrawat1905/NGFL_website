@@ -15,7 +15,7 @@ const Hero = () => {
       if (isPaused) {
         return;
       }
-      if (index < textToType.length) {
+      if (index < textToType.length) {  
         setText(textToType.slice(0, index + 1));
         setIndex(index + 1);
       } else {
