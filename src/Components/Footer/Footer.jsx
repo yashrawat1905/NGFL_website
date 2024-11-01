@@ -14,8 +14,8 @@ const Footer = () => {
           <img src={footer_logo} alt="Company Logo" />
           {/* Add email, phone and external link here */}
           <div className='contact-info'>
-            <p>Mail us at :<a href='mailto:abc@gmail.com'> info@nagarkot.co.in</a></p>
-            <p>Call us at :<a href='tel:+1234567890'> +91 74000 48450</a></p>
+            <p>Mail us at :<a href='mailto:info@nagarkot.co.in'> info@nagarkot.co.in</a></p>
+            <p>Call us at :<a href='tel:+91 74000 48450'> +91 74000 48450</a></p>
             <p>Check out more of our offerings on <a href='https://nagarkot.co.in/' target='_blank' rel='nopener noreferrer'>  Nagarkot.co.in</a></p>
           </div>
         </div>

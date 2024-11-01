@@ -44,11 +44,8 @@ const Navbar = () => {
         <ul className={`navbar-menu ${menuOpen ? 'show-menu' : ''}`}>
           <li className="navbar-item dropdown">
             <button className="dropdown-button">
-              ABOUT US <img src={downArrow} alt="Down Arrow" className="arrow-icon" />
+              <a href='about-us'>ABOUT US</a> 
             </button>
-            <div className="dropdown-content">
-              <a href="/our-story">OUR STORY</a>
-            </div>
           </li>
 
           <li className="navbar-item dropdown">

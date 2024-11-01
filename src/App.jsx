@@ -15,10 +15,10 @@ import Healthcare from './Pages/Industries/Healthcare/Healthcare';
 import Apparels from './Pages/Industries/Apparels/Apparels';
 import Retail from './Pages/Industries/Retail/Retail';
 import Whitegoods from './Pages/Industries/Whitegoods/Whitegoods'; 
-import Story from './Pages/About/Story/Story';
 import WarehousePage from './Pages/About/Locations/Locations';  // Import the dynamic location page
 import BlogDetail from './Components/BlogDetail/BlogDetail'; // Import your BlogDetail component
 import PrivacyPolicy from './Pages/About/Privacy-policy/pp';
+import About from './Pages/About/About-us/About';
 
 const App = () => {
   return (
@@ -38,10 +38,10 @@ const App = () => {
         <Route path="/apparel-fashion" element={<Apparels />} />
         <Route path="/retail" element={<Retail />} />
         <Route path="/white-goods" element={<Whitegoods />} />
-        <Route path="/our-story" element={<Story />} />
         {/* Dynamic warehouse location route */}
         <Route path="/locations/:location" element={<WarehousePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/about-us" element={<About/>} />
       </Routes>
     </div>
   );
