@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import './Hero.css'
+import './Hero.css';
+import Form from '../Form/Form';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -9,11 +10,14 @@ const Hero = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false); // Add this state
   const textToType = 'Logistics Expertise';
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const openForm = () => setIsFormOpen(true);
+  const closeForm = () => setIsFormOpen(false);
 
   useEffect(() => {
     let intervalId = setInterval(() => {
       if (isPaused) {
-        return;
+        return;          
       }
       if (index < textToType.length) {  
         setText(textToType.slice(0, index + 1));
@@ -44,9 +48,12 @@ const Hero = () => {
           <span className='sub'>Unlock seamless logistics with tailored 3PL solutions, ensuring optimized operations to drive your business growth, whether you are a </span>
           <span className='sub'>startup, <br/>an SME, or an established enterprise. </span><br />
         </p>
-        <button className='btn'>GET A QUOTE</button>
+        <button className='btn' onClick={openForm}>GET A QUOTE</button>
       </div>
+      {/* Contact Form Modal */}
+      {isFormOpen && <Form closeForm={closeForm} />}
     </div>
+    
   );
 };
 

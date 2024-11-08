@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 
 const Navbar = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);         
   const [sticky, setSticky] = useState(false);
 
   const openForm = () => setIsFormOpen(true);

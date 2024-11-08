@@ -59,6 +59,8 @@
     align-items: center;
     padding: 20px;
     color: white;
+    top: 0; /* Keeps content aligned in both front and back */
+    left: 0;
 }
 
 .card-front {
@@ -66,15 +68,26 @@
     background-position: center;
 }
 
+.card-front::before {
+    content: ""; /* Necessary to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(69, 64, 97, 0.7), rgba(58, 55, 86, 0.7));
+    border-radius: 10px; /* Matches the card's rounded corners */
+    z-index: 1; /* Keeps it behind text and other content */
+}
+
 /* Title for the front of the card */
 .card-heading-front {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     font-family: "Roboto", sans-serif;
     color: white;
     text-align: center;
     padding: 20px;
-    background-color: black;
     border-radius: 10px;
     top: 150px; /* Position at the bottom of the card */
     width: 90%; /* Adjust width to suit design */
@@ -83,12 +96,13 @@
 }
 
 .card-back {
-    background-color: #1A3E70;
+    background-color: #1A3E70; 
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
+    z-index: 1;
 }
 
 /* Description on the back of the card */

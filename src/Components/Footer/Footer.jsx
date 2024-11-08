@@ -30,19 +30,15 @@ const Footer = () => {
               <li><a href="/solutions/msme">MSME</a></li>
               <li><a href="/solutions/enterprises">Enterprises</a></li>
             </ul>
-          </div>
-          <div className="footer-column">
-            <h3>About Us</h3>
-            <ul>
-              <li><a href="/about-us/our-story">Our Story</a></li>
-            </ul>
-          </div>
+          </div>      
           <div className="footer-column">
             <h3>Resources</h3>
             <ul>
-              <li><a href="/resources/glossary">Glossary</a></li>
               <li><a href="/resources/blogs">Blogs</a></li>
             </ul>
+          </div>
+          <div className="footer-column">
+            <h3>About Us</h3>
           </div>
         </div>
       </div>
