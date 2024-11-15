@@ -103,6 +103,7 @@
     .hero-image img{
      width: 100%;
      overflow: hidden;
+     object-fit: cover;
     }
  }
 
@@ -121,11 +122,12 @@
  
   display: flex;
   align-items: center;
- gap: 20px;
+  gap: 20px;
   overflow: hidden;
   margin-bottom: 20px;
   margin: auto;
  }
+ 
  .hero-content-location{
   display: flex;
   flex-direction: column;
