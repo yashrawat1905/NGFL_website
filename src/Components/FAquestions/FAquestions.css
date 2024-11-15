@@ -114,3 +114,18 @@
   padding: 15px;
 }
 
+ /*responsive*/
+@media (min-width:320px) and (max-width:720px) {
+  /* .faq-navbar{
+    background-color: red;
+  } */
+  .faq-navbar-item{
+    font-size: 16px;
+  }
+  .faq-question{
+    font-size: 14px;
+  }
+  .faq-answer{
+    font-size: 14px;
+  }
+}
