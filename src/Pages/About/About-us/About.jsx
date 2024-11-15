@@ -21,7 +21,7 @@ const About = () => {
           <div className="content">
             <h2>This is Nagarkot Forwarders</h2>
             <p>With over 35 years of industry expertise, Nagarkot Forwarders has become a trusted name in 3PL, warehousing, customs clearance, and supply chain consultation. Serving multinational clients for more than a decade, we pride ourselves on delivering efficient, reliable, and tailored logistics solutions that meet the highest industry standards.</p><br/>
-            <p>Our experience and dedication allow us to navigate complex supply chains with precision, helping businesses thrive in a competitive landscape. As your logistics partner, we’re committed to innovation, integrity, and excellence in everything we do.</p>
+            <p>Our experience and dedication allow us to navigate complex supply chains with precision, helping businesses thrive in a competitive landscape. As your logistics partner, we’re committed to innovation, integrity, and excellence in everything we do.</p>
           </div>
           <div className="image-container">
             <img src={imagePath} alt="Nagarkot Forwarders" />
