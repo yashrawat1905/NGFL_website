@@ -20,7 +20,7 @@ const Form = ({ closeForm }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/send-email', {
+      const response = await fetch('https://nagarkot3pl.com/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
