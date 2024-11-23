@@ -6,9 +6,11 @@
 }
 
 .footer-top {
+  width: 100%;/*changes*/
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
 }
 
 .footer-logo img {
@@ -21,14 +23,16 @@
   display: flex;
   gap: 80px;
   margin-top: 20px;
-  margin-right: 340px;
-  margin-left: 10px;
+  /* margin-right: 340px; */
+  margin-right: 0; /* changes*/
+  /* margin-left: 10px; */
+  margin:30px auto;/*changes*/
 }
 
 .footer-column h3 {
   font-size: 24px;
   margin-bottom: 8px;
-  font-weight: 500; 
+  font-weight: 500;
   line-height: 1.2;
   font-family: 'Changa', sans-serif;
 }
@@ -163,8 +167,6 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
-
-
 /* responsive*/
 @media (min-width:320px) and (max-width:752px) {
   .footer{
@@ -305,4 +307,32 @@
   }
   
 
+}
+@media (min-width:981px) and (max-width:1440px) {
+  .footer-top{
+    display: flex;
+    justify-content: space-between;
+   gap: 30px;
+   
+    
+  }
+  .footer-grid{
+    margin: auto;
+    gap: 30px;
+    width: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(2,1fr);
+   
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+      
+  }
+  .footer-bottom{
+    width: 90%;
+    margin: auto;
+    
+  }
 }
