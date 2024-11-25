@@ -14,6 +14,7 @@
 
 .hero-content {
   flex: 1;
+  max-width: 40%;
   display: flex; 
   flex-direction: column;
   justify-content: flex-start;
@@ -77,68 +78,70 @@
 @media(min-width:320px) and (max-width:520px){
   .sol-hero{
     margin-top: 0;
-    width: 100%;
-    height: 380px;
-    position: relative;
-    margin: auto;
+    width: 90%;
+    height: 70vh;
+    padding: 0;
     overflow: hidden;
+    margin: auto;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content:flex-start;
+    align-items: flex-start;
   } 
-  .hero-content {
+
+  .hero-content{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
-    margin:auto 0;
+    align-items: flex-start;
+    max-width: 100% !important;
+    height: 250px !important;
     position: absolute;
+    gap: 10px;
+    margin:auto 0;
+    padding: 0;
     padding-right: 0;
-    left: 6%;
-    z-index: 1;
-    text-align: center;
+   text-align: center;
     height: 100%;
   }
+
   .hero-content p{
-    padding: 0;
+   padding: 0;
    width: 100%; 
    font-size: 14px;
    line-height: 1.4;
   }
  
-  .hero-title {
-    max-width: 100%;
-    margin-top: 30px;
+  .sol-hero .hero-title {
+    text-align:inherit;
+    width: 100% !important;
+    margin-top: 10px;
     font-size: 22px !important;
     line-height:1.1;  
-   
-    
+    margin-bottom: 0 !important;
   }
 
-  .hero-background{
-    width: 70%;
-    opacity: 80%;
-    
+  .hero-background {
     position: absolute;
-    margin-top: 50px;
+    width:100%;
+    height: 50%;
+    object-fit: cover;
+    opacity: 80%;
+    margin: auto;
+    margin-top: 200px;
+    overflow: hidden;
   }
-  .hero-sol-button{
-    padding: 4px 8px;
-    font-size: 14px;
-    margin-top: 10px;
-  }
- 
 }
 
-@media(min-width:520px) and (max-width:978px){
-  .sol-hero{
+@media(min-width:521px) and (max-width:978px){
+  .sol-hero {
     margin-top: 0;
     width: 100%;
     height: 430px;
     position: relative;
     margin: auto;
-  
   } 
+
   .hero-content {
     width: 100%;
     display: flex;
@@ -150,10 +153,10 @@
     left: 6%;
     z-index: 1;
     text-align: center;
-  
   }
-  .hero-content p{
-    padding: 0;
+
+  .hero-content p {
+   padding: 0;
    width: 100%; 
    line-height: 1.4;
    font-size: 16px;
@@ -164,21 +167,19 @@
     margin-top: 30px;
     font-size: 24px;
     line-height:1.1;  
-    
   }
  
-  .hero-background{
+  .hero-background {
     width: 65%;
     opacity: 80%;
     position: absolute;
     margin-top: 50px;
-   
   }
-  .hero-button{
+
+  .hero-button {
     padding: 4px 8px;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 20px !important;
   }
- 
 }
 

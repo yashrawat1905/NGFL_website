@@ -25,7 +25,7 @@ const IndustryMenu = () => {
        <ul className='industry-menu'>
           <Link to='/apparel-fashion'><li >APPAREL FASHION</li></Link>
           <Link to='/automotive'><li >AUTOMOTIVE</li></Link>
-          <Link to='/electronics'><li >Electronics</li></Link>
+          <Link to='/electronics'><li >ELECTRONICS</li></Link>
           <Link to='/energy'><li >ENERGY</li></Link>
           <Link to='/food'><li >FOOD AND BEVERAGES</li></Link>
           <Link to='/healthcare'><li >HEALTH CARE</li></Link>
