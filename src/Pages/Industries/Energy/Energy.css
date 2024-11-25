@@ -101,16 +101,16 @@
 }
 
 .energy-key-challenges-image {
-  flex: 1;
+  width: 40%;
 }
 
 .energy-key-challenges-image img {
-  width: 500px;
-  height: 650px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 200px;
+  width: 80%;
+  height: 400px;
   margin-top: 20px;
+  margin-right: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 /* Offerings Section */
