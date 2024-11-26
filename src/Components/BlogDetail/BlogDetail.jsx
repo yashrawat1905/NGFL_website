@@ -1123,7 +1123,6 @@ const BlogDetail = () => {
       <Navbar />
       <div className="blogs-container">
         <div className="image-container">
-          <img src='' alt="Blogs Background" className="background-image" />
           <div className="overlay">
             <h1 className="blogs-title"></h1>
           </div>
