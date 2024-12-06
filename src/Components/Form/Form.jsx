@@ -13,31 +13,39 @@ const Form = ({ closeForm }) => {
     message: '',
   });
 
+  // API base URL using your frontend domain
+  const API_BASE_URL = 'https://nagarkot3pl.com';
+
+  // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://nagarkot3pl.com/api/send-email', {
+      const response = await fetch(`${API_BASE_URL}/api/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+        },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        alert('Email sent successfully');
-        closeForm(); //Close the form if submission is successful
+        console.log('Email sent successfully');
+        alert('Your message has been sent successfully!');
+        closeForm();
       } else {
-        alert('Error sending email');
+        const errorData = await response.json();
+        console.error('Server responded with an error:', errorData);
+        alert(`Error: ${errorData.message || 'Failed to send email'}`);
       }
     } catch (error) {
-      console.error(error);
-      alert ('Error sending email');
-    }  
+      console.error('Error during form submission:', error);
+      alert('An unexpected error occurred. Please try again later.');
+    }
   };
 
   return (
@@ -54,31 +62,65 @@ const Form = ({ closeForm }) => {
           {/* Row 1: Name and Company Name */}
           <div className="form-row">
             <div className="form-group">
-              <label>NAME</label>
-              <input type="text" name="name" placeholder="Enter your name" required onChange={handleChange} />
+              <label htmlFor="name">NAME</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <label>COMPANY NAME</label>
-              <input type="text" name="companyName" placeholder="Enter your company name" required onChange={handleChange} />
+              <label htmlFor="companyName">COMPANY NAME</label>
+              <input
+                id="companyName"
+                type="text"
+                name="companyName"
+                placeholder="Enter your company name"
+                required
+                onChange={handleChange}
+              />
             </div>
           </div>
 
           {/* Row 2: Contact Number and Email ID */}
           <div className="form-row">
             <div className="form-group">
-              <label>CONTACT NUMBER</label>
-              <input type="tel" name="phone" placeholder="Enter your mobile number" required onChange={handleChange} />
+              <label htmlFor="phone">CONTACT NUMBER</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Enter your mobile number"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div className="form-group">
-              <label>EMAIL ID</label>
-              <input type="email" name="email" placeholder="Enter your email address" required onChange={handleChange} />
+              <label htmlFor="email">EMAIL ID</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                onChange={handleChange}
+              />
             </div>
           </div>
 
           {/* Row 3: Message box */}
           <div className="form-row full-width">
-            <label>Write your message here</label>
-            <textarea name="message" rows="6" placeholder="Enter your message" onChange={handleChange}></textarea>
+            <label htmlFor="message">WRITE YOUR MESSAGE HERE</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Enter your message"
+              onChange={handleChange}
+            ></textarea>
           </div>
 
           <button type="submit" className="btn-submit">Submit</button>
