@@ -12,18 +12,47 @@ const Form = ({ closeForm }) => {
     email: '',
     message: '',
   });
+  const [loading, setLoading] = useState(false); // For loading state
+  const [error, setError] = useState(null); // For error handling
 
-  // API base URL using your frontend domain
-  const API_BASE_URL = 'https://nagarkot3pl.com';
+  // Hardcoded API base URL using the Railway app URL
+  const API_BASE_URL = 'https://ngflwebsitebackend-production.up.railway.app'; // Replace with your Railway app URL
 
   // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Form validation
+  const validateForm = () => {
+    const { name, companyName, phone, email, message } = formData;
+    if (!name || !companyName || !phone || !email || !message) {
+      return 'All fields are required';
+    }
+    // Simple email validation regex
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      return 'Please enter a valid email address';
+    }
+    // Simple phone validation (accepts numbers only)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      return 'Please enter a valid 10-digit phone number';
+    }
+    return null; // No errors
+  };
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const validationError = validateForm();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+
+    setLoading(true);
+    setError(null); // Reset error if validation passes
     try {
       const response = await fetch(`${API_BASE_URL}/api/send-email`, {
         method: 'POST',
@@ -36,6 +65,13 @@ const Form = ({ closeForm }) => {
       if (response.ok) {
         console.log('Email sent successfully');
         alert('Your message has been sent successfully!');
+        setFormData({
+          name: '',
+          companyName: '',
+          phone: '',
+          email: '',
+          message: '',
+        }); // Reset form data
         closeForm();
       } else {
         const errorData = await response.json();
@@ -45,6 +81,8 @@ const Form = ({ closeForm }) => {
     } catch (error) {
       console.error('Error during form submission:', error);
       alert('An unexpected error occurred. Please try again later.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -58,6 +96,8 @@ const Form = ({ closeForm }) => {
           <button className="close-btn" onClick={closeForm}>&times;</button>
         </nav>
 
+        {error && <div className="error-message">{error}</div>}
+
         <form onSubmit={handleSubmit}>
           {/* Row 1: Name and Company Name */}
           <div className="form-row">
@@ -69,6 +109,7 @@ const Form = ({ closeForm }) => {
                 name="name"
                 placeholder="Enter your name"
                 required
+                value={formData.name}
                 onChange={handleChange}
               />
             </div>
@@ -80,6 +121,7 @@ const Form = ({ closeForm }) => {
                 name="companyName"
                 placeholder="Enter your company name"
                 required
+                value={formData.companyName}
                 onChange={handleChange}
               />
             </div>
@@ -95,6 +137,7 @@ const Form = ({ closeForm }) => {
                 name="phone"
                 placeholder="Enter your mobile number"
                 required
+                value={formData.phone}
                 onChange={handleChange}
               />
             </div>
@@ -106,6 +149,7 @@ const Form = ({ closeForm }) => {
                 name="email"
                 placeholder="Enter your email address"
                 required
+                value={formData.email}
                 onChange={handleChange}
               />
             </div>
@@ -119,11 +163,14 @@ const Form = ({ closeForm }) => {
               name="message"
               rows="6"
               placeholder="Enter your message"
+              value={formData.message}
               onChange={handleChange}
             ></textarea>
           </div>
 
-          <button type="submit" className="btn-submit">Submit</button>
+          <button type="submit" className="btn-submit" disabled={loading}>
+            {loading ? 'Sending...' : 'Submit'}
+          </button>
         </form>
       </div>
     </div>
